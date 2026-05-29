@@ -84,21 +84,22 @@
   .hero-eyebrow{margin-bottom:1.6rem}
 
   /* floating live badge */
-  .live-badge{position:absolute;z-index:3;right:max(32px,calc((100vw - var(--maxw))/2 + 32px));bottom:clamp(3.5rem,7vw,6rem);width:300px;background:rgba(255,246,233,.92);backdrop-filter:blur(12px);border-radius:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);overflow:hidden;color:var(--ink);border:1px solid rgba(255,255,255,.5)}
+  .live-badge{position:absolute;z-index:3;right:max(32px,calc((100vw - var(--maxw))/2 + 32px));bottom:clamp(3.5rem,7vw,6rem);width:380px;background:rgba(255,246,233,.94);backdrop-filter:blur(12px);border-radius:20px;box-shadow:0 34px 70px -22px rgba(0,0,0,.6);overflow:hidden;color:var(--ink);border:1px solid rgba(255,255,255,.5)}
   @media(max-width:980px){.live-badge{display:none}}
-  .lb-cover{height:104px;position:relative;overflow:hidden}
+  .lb-cover{height:150px;position:relative;overflow:hidden}
   .lb-cover img{width:100%;height:100%;object-fit:cover}
   .lb-open{position:absolute;top:10px;left:10px;display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,246,233,.95);padding:.28rem .6rem;border-radius:100px;font-size:.72rem;font-weight:700;color:var(--green)}
   .lb-open .pulse{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2.2s infinite}
-  .lb-body{padding:.85rem 1rem 1rem}
-  .lb-name{font-family:var(--disp);font-weight:700;font-size:1.15rem}
-  .lb-row{display:flex;align-items:center;gap:.4rem;margin-top:.3rem;font-size:.85rem}
+  .lb-body{padding:1.05rem 1.2rem 1.2rem}
+  .lb-name{font-family:var(--disp);font-weight:700;font-size:1.45rem;letter-spacing:-.01em}
+  .lb-row{display:flex;align-items:center;gap:.45rem;margin-top:.45rem;font-size:.95rem}
   .lb-row .num{font-weight:700}
   .lb-stars{display:flex;gap:1px}
-  .lb-stars svg{width:14px;height:14px}
-  .lb-meta{color:var(--muted);font-size:.8rem;margin-top:.3rem}
-  .lb-pin{position:absolute;right:14px;top:74px;z-index:4;opacity:0;transform:translateY(-26px);transition:transform .8s cubic-bezier(.34,1.3,.5,1),opacity .5s}
-  .lb-pin svg{width:30px;height:38px;filter:drop-shadow(0 6px 6px rgba(0,0,0,.35))}
+  .lb-stars svg{width:16px;height:16px}
+  .lb-meta{color:var(--muted);font-size:.88rem;margin-top:.45rem}
+  .lb-open{font-size:.78rem}
+  .lb-pin{position:absolute;right:18px;top:108px;z-index:4;opacity:0;transform:translateY(-26px);transition:transform .8s cubic-bezier(.34,1.3,.5,1),opacity .5s}
+  .lb-pin svg{width:36px;height:46px;filter:drop-shadow(0 6px 6px rgba(0,0,0,.35))}
   .live-badge.go .lb-pin{opacity:1;transform:translateY(0)}
 
   .scrollcue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,246,233,.6);display:flex;flex-direction:column;align-items:center;gap:.5rem}
@@ -114,7 +115,7 @@
   .marquee:hover .mq-track{animation-play-state:paused}
 
   /* STATS */
-  .stats{background:var(--ink);color:var(--cream);padding:clamp(3.5rem,7vw,5.5rem) 0;position:relative;overflow:hidden}
+  .stats{background:var(--ink);color:var(--cream);padding:clamp(3rem,5.5vw,4.5rem) 0;position:relative;overflow:hidden}
   .stats::before{content:"";position:absolute;top:-30%;left:-10%;width:50%;height:160%;background:radial-gradient(circle,rgba(247,160,18,.16),transparent 60%)}
   .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;position:relative}
   @media(max-width:780px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:2.2rem}}
@@ -122,7 +123,7 @@
   .stat .lbl{margin-top:.6rem;font-size:.98rem;color:rgba(255,246,233,.78);max-width:22ch}
 
   /* SECTIONS */
-  .sec{padding:clamp(5rem,10vw,8.5rem) 0;position:relative}
+  .sec{padding:clamp(3.25rem,6vw,5.5rem) 0;position:relative}
   h2.h{font-family:var(--disp);font-weight:800;font-size:clamp(2.3rem,6.2vw,5rem);line-height:.98;letter-spacing:-.03em;text-wrap:balance}
   h2.h .am{color:var(--amber-deep)}
   .kicker{margin-bottom:1.3rem}
@@ -139,7 +140,7 @@
   .problem p{color:rgba(255,246,233,.72);font-size:1.2rem;max-width:52ch;margin-top:1.6rem}
 
   /* WHAT YOU GET */
-  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.6rem}
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.4rem}
   @media(max-width:880px){.cards3{grid-template-columns:1fr;max-width:440px;margin-inline:auto}}
   .vcard{background:var(--cream);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:box-shadow .5s var(--ease);transform-style:preserve-3d;will-change:transform}
   .vcard:hover{box-shadow:0 30px 60px -28px rgba(120,70,10,.45)}
@@ -157,7 +158,7 @@
 
   /* HOW */
   .how{background:var(--cream-2)}
-  .steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:3.6rem}
+  .steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:2.4rem}
   @media(max-width:880px){.steps4{grid-template-columns:1fr 1fr;gap:1.8rem}}
   @media(max-width:520px){.steps4{grid-template-columns:1fr}}
   .stepc{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:1.7rem 1.5rem;position:relative;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
@@ -177,7 +178,7 @@
 
   /* EXAMPLES scroller */
   .ex-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap}
-  .scroller{display:flex;gap:1.5rem;margin-top:3rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1.4rem;scrollbar-width:thin}
+  .scroller{display:flex;gap:1.5rem;margin-top:2.2rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1.4rem;scrollbar-width:thin}
   .scroller::-webkit-scrollbar{height:8px}
   .scroller::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px}
   .exc{flex:0 0 min(420px,82vw);scroll-snap-align:start}
@@ -196,7 +197,7 @@
   .pricing{background:var(--ink);color:var(--cream)}
   .pricing h2.h{color:var(--cream)}
   .pricing .lead{color:rgba(255,246,233,.74)}
-  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3.4rem;align-items:stretch}
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.4rem;align-items:stretch}
   @media(max-width:880px){.tiers{grid-template-columns:1fr;max-width:420px;margin-inline:auto}}
   .tier{background:var(--ink-2);border:1px solid var(--line-d);border-radius:22px;padding:2rem 1.8rem;display:flex;flex-direction:column;transition:transform .5s var(--ease)}
   .tier:hover{transform:translateY(-6px)}
@@ -258,9 +259,7 @@
   /* grain */
   .grain{position:absolute;inset:0;pointer-events:none;opacity:.06;z-index:1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
   .stats .stats-grid{z-index:2}
-  /* kinetic headline wipe */
-  .hero h1[data-reveal], h2.h[data-reveal]{clip-path:inset(0 0 110% 0);transition:opacity .9s var(--ease),transform .9s var(--ease),clip-path 1.05s var(--ease)}
-  .hero h1[data-reveal].in, h2.h[data-reveal].in{clip-path:inset(0 0 -10% 0)}
+  /* headings use the standard fade-up reveal (no clip wipe) */
   /* live badge idle float */
   .live-badge.go{animation:floaty 6.5s ease-in-out 1.8s infinite}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
@@ -288,7 +287,7 @@
         <path d="M24 9.5c1.6 0 2.9 1.3 2.9 2.9 0 .9-.4 1.7-1 2.2 3 1.4 5.1 4.8 5.1 9.4 0 6-3 11-7 11s-7-5-7-11c0-4.6 2.1-8 5.1-9.4-.6-.5-1-1.3-1-2.2 0-1.6 1.3-2.9 2.9-2.9Z" fill="#FFF6E9"/>
         <path d="M19.4 20.2c1.2-.7 2.9-1.1 4.6-1.1s3.4.4 4.6 1.1M18.6 25.2c1.5-.8 3.4-1.2 5.4-1.2s3.9.4 5.4 1.2M20 30.2c1.1.6 2.5.9 4 .9s2.9-.3 4-.9" stroke="#F7A012" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
-      <span>go be found</span>
+      <span>gobeefound</span>
     </a>
     <nav class="nav-links">
       <a href="#how" class="lnk">How it works</a>
@@ -538,7 +537,7 @@
         <ellipse cx="33.5" cy="17" rx="9" ry="5.4" fill="#F7A012" opacity=".5" transform="rotate(24 33.5 17)"/>
         <path d="M24 9.5c1.6 0 2.9 1.3 2.9 2.9 0 .9-.4 1.7-1 2.2 3 1.4 5.1 4.8 5.1 9.4 0 6-3 11-7 11s-7-5-7-11c0-4.6 2.1-8 5.1-9.4-.6-.5-1-1.3-1-2.2 0-1.6 1.3-2.9 2.9-2.9Z" fill="#FFF6E9"/>
       </svg>
-      <span>go be found</span>
+      <span>gobeefound</span>
     </a>
     <div class="foot-links"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#audit">Free audit</a></div>
     <div>Online everywhere · © 2026 Go Be Found</div>
