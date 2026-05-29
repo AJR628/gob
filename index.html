@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Go Be Found: Get found everywhere your customers look</title>
+<title>gobeefound: get found everywhere your customers look</title>
 <meta name="description" content="We build your website, claim your Google profile, and put your business on the map. Once. You own it, and you never touch it again. Flat fee, no contracts, no monthly bills.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 64 64'%3E%3Crect width%3D'64' height%3D'64' rx%3D'15' fill%3D'%23171210'%2F%3E%3Cellipse cx%3D'21.5' cy%3D'27' rx%3D'12' ry%3D'6' fill%3D'%23F7A012' opacity%3D'.5' transform%3D'rotate(-22 21.5 27)'%2F%3E%3Cellipse cx%3D'42.5' cy%3D'27' rx%3D'12' ry%3D'6' fill%3D'%23F7A012' opacity%3D'.5' transform%3D'rotate(22 42.5 27)'%2F%3E%3Cpath d%3D'M32 17c2.1 0 3.8 1.7 3.8 3.8 0 1.1-.5 2.1-1.3 2.8 3.7 1.8 6.1 5.8 6.1 11 0 7-3.9 12.9-8.6 12.9s-8.6-5.9-8.6-12.9c0-5.2 2.4-9.2 6.1-11-.8-.7-1.3-1.7-1.3-2.8C28.2 18.7 29.9 17 32 17Z' fill%3D'%23F7A012'%2F%3E%3Cpath d%3D'M26.6 28.4h10.8M25.8 34h12.4M27.6 39.6h8.8' stroke%3D'%23171210' stroke-width%3D'2.2' stroke-linecap%3D'round'%2F%3E%3C%2Fsvg%3E">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9N7MVZ6064"></script>
 <script>
@@ -292,6 +293,16 @@
   .hp{position:absolute!important;left:-9999px}
   .form-done{background:rgba(255,246,233,.08);border:1px solid var(--amber);border-radius:16px;padding:2.2rem 1.5rem;text-align:center;font-family:var(--disp);font-weight:600;font-size:1.3rem;color:var(--cream);max-width:560px;margin:2.2rem auto 0}
 
+  /* mobile refinements */
+  @media(max-width:760px){
+    header.nav{padding:14px 0}
+    .hero{min-height:auto;align-items:center;padding-top:5.25rem;padding-bottom:3rem}
+    .hero-inner{padding-top:1.2rem;padding-bottom:0}
+    .hero-eyebrow{margin-bottom:1.1rem}
+    .hero-sub{margin:1.2rem 0 1.6rem}
+    .scrollcue{display:none}
+  }
+
   @media(prefers-reduced-motion:reduce){
     *{animation:none!important;transition:none!important}
     [data-reveal]{opacity:1!important;transform:none!important;clip-path:none!important}
@@ -329,7 +340,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg" id="heroBg">
-    <img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/ae4c8f07-820c-40c8-86f4-94ec370629a9.png" alt="Lively independent small-business street at golden hour" fetchpriority="high">
+    <img src="https://pub.hyperagent.com/api/published/pbf01KSS36TZB_XEFBJA3XPXP0121W/ae4c8f07-820c-40c8-86f4-94ec370629a9.png" alt="Lively independent small-business street at golden hour" fetchpriority="high">
   </div>
   <div class="wrap hero-inner">
     <span class="eyebrow on-dark hero-eyebrow" data-reveal><span class="bdot"></span>Done-for-you online presence</span>
@@ -344,7 +355,7 @@
   <!-- floating live badge -->
   <div class="live-badge" id="liveBadge">
     <div class="lb-cover">
-      <img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/ba3ba1c6-d6d6-4d8b-95c2-dd9bec7b47bb.png" alt="Café">
+      <img src="https://pub.hyperagent.com/api/published/pbf01KSS36VGR_NYY48D8VYYDW2GMZ/ba3ba1c6-d6d6-4d8b-95c2-dd9bec7b47bb.png" alt="Café">
       <span class="lb-open"><span class="pulse"></span>OPEN NOW</span>
     </div>
     <div class="lb-pin" id="lbPin"><svg viewBox="0 0 30 38" fill="none"><path d="M15 1c7.2 0 13 5.6 13 12.6C28 23 15 37 15 37S2 23 2 13.6C2 6.6 7.8 1 15 1Z" fill="#F7A012"/><circle cx="15" cy="13.5" r="4.6" fill="#fff"/></svg></div>
@@ -403,11 +414,11 @@
     <h2 class="h" data-reveal>One flat fee. A <span class="am">complete</span> presence.</h2>
     <div class="cards3">
       <div class="vcard" data-tilt data-reveal>
-        <div class="top"><span class="tag">Website</span><img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/ba3ba1c6-d6d6-4d8b-95c2-dd9bec7b47bb.png" alt="Website" loading="lazy"></div>
+        <div class="top"><span class="tag">Website</span><img src="https://pub.hyperagent.com/api/published/pbf01KSS36VGR_NYY48D8VYYDW2GMZ/ba3ba1c6-d6d6-4d8b-95c2-dd9bec7b47bb.png" alt="Website" loading="lazy"></div>
         <div class="c"><h3>A website you own</h3><p>Clean, fast, built to last on your own domain. No logins to babysit, no platform that can lock you out.</p></div>
       </div>
       <div class="vcard" data-tilt data-reveal>
-        <div class="top"><span class="tag">Google</span><img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/e04bea69-061f-4729-a5af-15f1cc3ed98b.png" alt="Google profile" loading="lazy"></div>
+        <div class="top"><span class="tag">Google</span><img src="https://pub.hyperagent.com/api/published/pbf01KSS36W46_BXN1BCYR7AQVC1CK/e04bea69-061f-4729-a5af-15f1cc3ed98b.png" alt="Google profile" loading="lazy"></div>
         <div class="c"><h3>Your Google profile, claimed</h3><p>Photos, hours, services: verified and accurate, so you show up right when someone searches your name.</p></div>
       </div>
       <div class="vcard" data-tilt data-reveal>
@@ -458,16 +469,16 @@
     </div>
     <div class="scroller">
       <div class="exc">
-        <div class="frame"><div class="bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="u">sandcreekroasters.com</span></div><img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/ba3ba1c6-d6d6-4d8b-95c2-dd9bec7b47bb.png" alt="Café" loading="lazy"></div>
+        <div class="frame"><div class="bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="u">sandcreekroasters.com</span></div><img src="https://pub.hyperagent.com/api/published/pbf01KSS36VGR_NYY48D8VYYDW2GMZ/ba3ba1c6-d6d6-4d8b-95c2-dd9bec7b47bb.png" alt="Café" loading="lazy"></div>
         <div class="cap"><span class="nm">Sand Creek Roasters</span><span class="ty">Café</span></div>
         <span class="exc-vw"></span>
       </div>
       <div class="exc">
-        <div class="frame"><div class="bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="u">iliffbarberco.com</span></div><img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/e04bea69-061f-4729-a5af-15f1cc3ed98b.png" alt="Barbershop" loading="lazy"></div>
+        <div class="frame"><div class="bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="u">iliffbarberco.com</span></div><img src="https://pub.hyperagent.com/api/published/pbf01KSS36W46_BXN1BCYR7AQVC1CK/e04bea69-061f-4729-a5af-15f1cc3ed98b.png" alt="Barbershop" loading="lazy"></div>
         <div class="cap"><span class="nm">Iliff Barber Co.</span><span class="ty">Barbershop</span></div>
       </div>
       <div class="exc">
-        <div class="frame"><div class="bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="u">buckleyhandyman.com</span></div><img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/d19a90de-20a6-4456-ba94-2fff573832a5.png" alt="Handyman" loading="lazy"></div>
+        <div class="frame"><div class="bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="u">buckleyhandyman.com</span></div><img src="https://pub.hyperagent.com/api/published/pbf01KSS38T1W_2S05NSAEEXR021YR/d19a90de-20a6-4456-ba94-2fff573832a5.png" alt="Handyman" loading="lazy"></div>
         <div class="cap"><span class="nm">Buckley Handyman</span><span class="ty">Trades</span></div>
       </div>
     </div>
@@ -529,7 +540,7 @@
       <p class="lead" data-reveal>Based in Aurora. If you're nearby, I'll come to you, take the photos, and handle the Google verification face to face. If you're not, we'll get the whole thing done remotely. Same result either way.</p>
     </div>
     <div class="where-img" data-reveal>
-      <img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/2f13d260-616b-467e-8f04-f84ceca211b2.png" alt="Small-business owner in her shop doorway" loading="lazy">
+      <img src="https://pub.hyperagent.com/api/published/pbf01KSS38TJ4_JT44J0NCQXJX2WPY/2f13d260-616b-467e-8f04-f84ceca211b2.png" alt="Small-business owner in her shop doorway" loading="lazy">
       <div class="badge"><span class="pin"><svg width="14" height="17" viewBox="0 0 30 38" fill="none"><path d="M15 1c7.2 0 13 5.6 13 12.6C28 23 15 37 15 37S2 23 2 13.6C2 6.6 7.8 1 15 1Z" fill="#171210"/><circle cx="15" cy="13.5" r="4.6" fill="#fff"/></svg></span>On the map, and open for business</div>
     </div>
   </div>
@@ -547,7 +558,7 @@
 
 <!-- FINAL -->
 <section class="final" id="audit">
-  <div class="final-bg"><img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/ae4c8f07-820c-40c8-86f4-94ec370629a9.png" alt="" loading="lazy"></div>
+  <div class="final-bg"><img src="https://pub.hyperagent.com/api/published/pbf01KSS36TZB_XEFBJA3XPXP0121W/ae4c8f07-820c-40c8-86f4-94ec370629a9.png" alt="" loading="lazy"></div>
   <div class="grain"></div>
   <div class="wrap inner">
     <h2 data-reveal>Let's get you <span class="am">found.</span></h2>
