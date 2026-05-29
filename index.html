@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Go Be Found — Get found everywhere your customers look</title>
+<title>Go Be Found: Get found everywhere your customers look</title>
 <meta name="description" content="We build your website, claim your Google profile, and put your business on the map. Once. You own it, and you never touch it again. Flat fee, no contracts, no monthly bills.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9N7MVZ6064"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9N7MVZ6064');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -264,6 +272,22 @@
   .live-badge.go{animation:floaty 6.5s ease-in-out 1.8s infinite}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
+  /* audit form */
+  .audit-form{max-width:560px;margin:2.2rem auto 0;text-align:left}
+  .af-row{display:flex;gap:1rem}
+  @media(max-width:560px){.af-row{flex-direction:column;gap:0}}
+  .af-field{display:flex;flex-direction:column;gap:.4rem;flex:1;margin-bottom:1.1rem}
+  .af-field span{font-size:.82rem;font-weight:600;color:var(--amber-soft);letter-spacing:.02em}
+  .af-field input,.af-field select{font-family:var(--sans);font-size:1rem;padding:.85rem 1rem;border-radius:12px;border:1px solid rgba(255,246,233,.22);background:rgba(255,246,233,.06);color:var(--cream);transition:border-color .25s,background .25s}
+  .af-field input::placeholder{color:rgba(255,246,233,.4)}
+  .af-field input:focus,.af-field select:focus{outline:none;border-color:var(--amber);background:rgba(255,246,233,.1)}
+  .af-field select{appearance:none;-webkit-appearance:none;cursor:pointer}
+  .af-field select option{color:#171210}
+  .af-submit{margin-top:.4rem;width:100%;justify-content:center;border:none;font-size:1.05rem;padding:1.05rem}
+  .af-fine{font-size:.82rem;color:rgba(255,246,233,.6);text-align:center;margin-top:.9rem}
+  .hp{position:absolute!important;left:-9999px}
+  .form-done{background:rgba(255,246,233,.08);border:1px solid var(--amber);border-radius:16px;padding:2.2rem 1.5rem;text-align:center;font-family:var(--disp);font-weight:600;font-size:1.3rem;color:var(--cream);max-width:560px;margin:2.2rem auto 0}
+
   @media(prefers-reduced-motion:reduce){
     *{animation:none!important;transition:none!important}
     [data-reveal]{opacity:1!important;transform:none!important;clip-path:none!important}
@@ -306,7 +330,7 @@
   <div class="wrap hero-inner">
     <span class="eyebrow on-dark hero-eyebrow" data-reveal><span class="bdot"></span>Done-for-you online presence</span>
     <h1 data-reveal>Get <span class="found">found.<svg viewBox="0 0 300 24" preserveAspectRatio="none"><path d="M4 16C70 6 230 6 296 12"/></svg></span><span class="l2">Put your business on the map.</span></h1>
-    <p class="hero-sub d1" data-reveal>We build your website, claim your Google profile, and get you listed everywhere customers look — the whole foundation, done for you. You own it, and you never touch it again.</p>
+    <p class="hero-sub d1" data-reveal>We build your website, claim your Google profile, and get you listed everywhere customers look. The whole foundation, done for you. You own it, and you never touch it again.</p>
     <div class="hero-cta d2" data-reveal>
       <a href="#audit" class="btn btn-amber" data-magnetic>Get a free presence audit <span class="arr">→</span></a>
       <a href="#how" class="btn btn-light">See how it works</a>
@@ -355,7 +379,7 @@
     <div class="stat" data-reveal><div class="n"><span data-count="27">0</span>%</div><div class="lbl">of local businesses have no real website at all.</div></div>
     <div class="stat d1" data-reveal><div class="n">~<span data-count="2">0</span> wks</div><div class="lbl">from invisible to fully online and on the map.</div></div>
     <div class="stat" data-reveal><div class="n">$<span data-count="0">0</span></div><div class="lbl">per month, required. No contracts, ever.</div></div>
-    <div class="stat" data-reveal><div class="n"><span data-count="100">0</span>%</div><div class="lbl">yours — you own the site, domain, and profiles.</div></div>
+    <div class="stat" data-reveal><div class="n"><span data-count="100">0</span>%</div><div class="lbl">yours. You own the site, domain, and profiles.</div></div>
   </div>
 </section>
 
@@ -364,7 +388,7 @@
   <div class="wrap">
     <span class="eyebrow on-dark kicker" data-reveal>The problem</span>
     <h2 class="h" data-reveal id="problemH">When someone Googles you, they <span class="ghost">find nothing.</span></h2>
-    <p data-reveal>No website. An unclaimed map pin. Wrong hours, or no listing at all. So the customer shrugs and calls the next name on the list. Being invisible has a price — and it's fixable in about two weeks.</p>
+    <p data-reveal>No website. An unclaimed map pin. Wrong hours, or no listing at all. So the customer shrugs and calls the next name on the list. Being invisible has a price, and it's fixable in about two weeks.</p>
   </div>
 </section>
 
@@ -380,7 +404,7 @@
       </div>
       <div class="vcard" data-tilt data-reveal>
         <div class="top"><span class="tag">Google</span><img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/e04bea69-061f-4729-a5af-15f1cc3ed98b.png" alt="Google profile" loading="lazy"></div>
-        <div class="c"><h3>Your Google profile, claimed</h3><p>Photos, hours, services — verified and accurate, so you show up right when someone searches your name.</p></div>
+        <div class="c"><h3>Your Google profile, claimed</h3><p>Photos, hours, services: verified and accurate, so you show up right when someone searches your name.</p></div>
       </div>
       <div class="vcard" data-tilt data-reveal>
         <div class="dirlist" style="padding-top:1.6rem">
@@ -402,7 +426,7 @@
     <h2 class="h" data-reveal>Invisible to found in about <span class="am">two weeks.</span></h2>
     <div class="steps4">
       <div class="stepc" data-reveal><div class="nbig">1</div><h3>Free audit</h3><p>We Google you and show you exactly what's there, what's missing, and what to fix. Ten minutes, no obligation.</p></div>
-      <div class="stepc" data-reveal class="d1"><div class="nbig">2</div><h3>Pick a package</h3><p>Three flat-fee options. Pay half to start — nothing to sign.</p></div>
+      <div class="stepc" data-reveal class="d1"><div class="nbig">2</div><h3>Pick a package</h3><p>Three flat-fee options. Pay half to start. Nothing to sign.</p></div>
       <div class="stepc" data-reveal><div class="nbig">3</div><h3>We build</h3><p>You send a few photos and answer a few questions. We do everything else.</p></div>
       <div class="stepc" data-reveal><div class="nbig">4</div><h3>You're live</h3><p>Site up, profiles claimed, on the map. Pay the rest. Then forget about it.</p></div>
     </div>
@@ -426,7 +450,7 @@
         <span class="eyebrow kicker" data-reveal>Examples</span>
         <h2 class="h" data-reveal>The kind of foundation <span class="am">we build.</span></h2>
       </div>
-      <p class="lead" data-reveal style="margin:0">A mix of demos and real builds. No ranking promises — just clean, fast, findable.</p>
+      <p class="lead" data-reveal style="margin:0">A mix of demos and real builds. No ranking promises, just clean, fast, findable.</p>
     </div>
     <div class="scroller">
       <div class="exc">
@@ -465,7 +489,7 @@
       <div class="tier feat" data-reveal class="d1">
         <span class="flag">Most popular</span>
         <span class="tn">Foundation</span><div class="pr">$1,200</div>
-        <div class="ts">The complete presence most businesses need — done in full.</div>
+        <div class="ts">The complete presence most businesses need, done in full.</div>
         <ul>
           <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4–5 page site + domain</li>
           <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full Google profile + photos</li>
@@ -486,8 +510,8 @@
         <a href="#audit" class="btn btn-light" style="justify-content:center">Go bigger</a>
       </div>
     </div>
-    <div class="care" data-reveal>Want it fully hands-off? <b>Foundation Care — $89/mo.</b> Hosting, updates, support. Cancel anytime.</div>
-    <div class="compare" data-reveal>A year with us runs about <b>$1,200</b>. A year with the big bundled services runs <b>$5,000–$6,600</b> — on a contract, and you don't even own what they build.</div>
+    <div class="care" data-reveal>Want it fully hands-off? <b>Foundation Care: $89/mo.</b> Hosting, updates, support. Cancel anytime.</div>
+    <div class="compare" data-reveal>A year with us runs about <b>$1,200</b>. A year with the big bundled services runs <b>$5,000–$6,600</b>. That's on a contract, and you don't even own what they build.</div>
   </div>
 </section>
 
@@ -497,7 +521,7 @@
     <div>
       <span class="eyebrow kicker" data-reveal>Where we work</span>
       <h2 class="h" data-reveal>Front Range in person. <span class="am">Everywhere else, online.</span></h2>
-      <p class="lead" data-reveal>Based in Aurora — if you're nearby, I'll come to you, take the photos, and handle the Google verification face to face. If you're not, we'll get the whole thing done remotely. Same result either way.</p>
+      <p class="lead" data-reveal>Based in Aurora. If you're nearby, I'll come to you, take the photos, and handle the Google verification face to face. If you're not, we'll get the whole thing done remotely. Same result either way.</p>
     </div>
     <div class="where-img" data-reveal>
       <img src="https://hyperagent.com/api/files/usergenerated/threads/cmppkp39008oy07adenry4ma3/images/2f13d260-616b-467e-8f04-f84ceca211b2.png" alt="Small-business owner in her shop doorway" loading="lazy">
@@ -511,7 +535,7 @@
   <div class="wrap">
     <div class="talk-box" data-reveal>
       <span class="eyebrow">Straight talk</span>
-      <p>We get you found, then get out of your way. We're not an ad agency, and we won't promise you the #1 spot on Google — that's a separate, ongoing job. When you're ready for it, we'll point you to someone good.</p>
+      <p>We get you found, then get out of your way. We're not an ad agency, and we won't promise you the #1 spot on Google. That's a separate, ongoing job. When you're ready for it, we'll point you to someone good.</p>
     </div>
   </div>
 </section>
@@ -522,8 +546,29 @@
   <div class="grain"></div>
   <div class="wrap inner">
     <h2 data-reveal>Let's get you <span class="am">found.</span></h2>
-    <p data-reveal>Start with a free presence audit. Ten minutes, no obligation — you'll see exactly where you stand.</p>
-    <div data-reveal><a href="mailto:hello@gobeefound.com" class="btn btn-amber">Get a free presence audit <span class="arr">→</span></a></div>
+    <p data-reveal>Start with a free presence audit. Ten minutes, no obligation. You'll see exactly where you stand.</p>
+    <form name="presence-audit" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="auditForm" class="audit-form" data-reveal>
+      <input type="hidden" name="form-name" value="presence-audit">
+      <p class="hp"><label>Leave this empty: <input name="bot-field"></label></p>
+      <div class="af-row">
+        <label class="af-field"><span>Your name</span><input type="text" name="name" required placeholder="Jordan Smith"></label>
+        <label class="af-field"><span>Business name</span><input type="text" name="business" placeholder="Sand Creek Roasters"></label>
+      </div>
+      <div class="af-row">
+        <label class="af-field"><span>Email</span><input type="email" name="email" required placeholder="you@business.com"></label>
+        <label class="af-field"><span>Phone (optional)</span><input type="tel" name="phone" placeholder="(720) 555-0123"></label>
+      </div>
+      <label class="af-field"><span>What's the biggest gap right now?</span>
+        <select name="biggest_gap">
+          <option>No website yet</option>
+          <option>Outdated or broken website</option>
+          <option>Unclaimed or wrong Google listing</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <button type="submit" class="btn btn-amber af-submit">Get my free audit <span class="arr">→</span></button>
+      <p class="af-fine">No obligation. I'll reply within one business day.</p>
+    </form>
     <div class="contact" data-reveal><span>Call or text <a href="tel:+17205550199">(720) 555-0199</a></span><span>·</span><span><a href="mailto:hello@gobeefound.com">hello@gobeefound.com</a></span></div>
   </div>
 </section>
@@ -609,6 +654,17 @@
   var heroBg=document.getElementById('heroBg');
   if(!reduce && heroBg){
     addEventListener('scroll',function(){var y=scrollY;if(y<innerHeight){heroBg.style.transform='translateY('+(y*.28)+'px)';}},{passive:true});
+  }
+
+  // netlify audit form: AJAX submit with graceful inline success (degrades to normal POST without JS)
+  var af=document.getElementById('auditForm');
+  if(af){
+    af.addEventListener('submit',function(e){
+      e.preventDefault();
+      var body=new URLSearchParams(new FormData(af)).toString();
+      function done(){af.innerHTML='<div class="form-done">Thanks! Your audit request is in. I\'ll get back to you within one business day.</div>';}
+      fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body}).then(done).catch(done);
+    });
   }
 })();
 </script>
