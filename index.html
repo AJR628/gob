@@ -215,6 +215,8 @@
   .tier.feat .tn{color:var(--ink)}
   .tier .pr{font-family:var(--disp);font-weight:800;font-size:2.9rem;letter-spacing:-.02em;margin:.6rem 0 .1rem}
   .tier .pr small{font-size:.9rem;font-weight:500;opacity:.6}
+  .tier .pr .was{font-size:1.5rem;font-weight:700;opacity:.5;text-decoration:line-through;margin-right:.45rem}
+  .tier .pr.custom{font-size:2.3rem}
   .tier .ts{font-size:.93rem;opacity:.8;margin-bottom:1.4rem;min-height:2.7em}
   .tier ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.7rem;flex:1}
   .tier li{display:flex;gap:.55rem;font-size:.93rem;align-items:flex-start}
@@ -441,7 +443,7 @@
     <h2 class="h" data-reveal>Invisible to found in about <span class="am">two weeks.</span></h2>
     <div class="steps4">
       <div class="stepc" data-reveal><div class="nbig">1</div><h3>Free audit</h3><p>We Google you and show you exactly what's there, what's missing, and what to fix. Ten minutes, no obligation.</p></div>
-      <div class="stepc" data-reveal class="d1"><div class="nbig">2</div><h3>Pick a package</h3><p>Three flat-fee options. Pay half to start. Nothing to sign.</p></div>
+      <div class="stepc d1" data-reveal><div class="nbig">2</div><h3>Pick a package</h3><p>Pick the option that fits. Pay half to start. Nothing to sign.</p></div>
       <div class="stepc" data-reveal><div class="nbig">3</div><h3>We build</h3><p>You send a few photos and answer a few questions. We do everything else.</p></div>
       <div class="stepc" data-reveal><div class="nbig">4</div><h3>You're live</h3><p>Site up, profiles claimed, on the map. Pay the rest. Then forget about it.</p></div>
     </div>
@@ -490,44 +492,47 @@
   <div class="wrap" style="text-align:center">
     <span class="eyebrow on-dark kicker" data-reveal>Introductory pricing</span>
     <h2 class="h" data-reveal>Flat fee. No contract. <span class="am" style="color:var(--amber)">You own it.</span></h2>
-    <div class="intro-banner" data-reveal><span class="bdot"></span>Founding-client pricing. These intro rates go up as our calendar fills, so lock yours in now.</div>
+    <div class="intro-banner" data-reveal><span class="bdot"></span>Limited-time founding rates: 50% off while I fill my first calendar. Lock yours in before they go up.</div>
     <div class="tiers" style="text-align:left">
       <div class="tier" data-reveal>
-        <span class="tn">Findable</span><div class="intro-tag">Intro rate</div><div class="pr">$650</div>
-        <div class="ts">A clean one-page presence to get you on the map fast.</div>
+        <span class="tn">Online</span><div class="intro-tag">Intro · 50% off</div><div class="pr"><span class="was">$900</span>$450 <small>one-time</small></div>
+        <div class="ts">Get online fast, on a domain that's yours. The essentials, done right.</div>
         <ul>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>One-page site + domain</li>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Google Business Profile</li>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Bing &amp; Apple Maps</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1–2 page website, built for you</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Your own domain, and you own it</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile-friendly, clean &amp; fast</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Click-to-call &amp; contact built in</li>
         </ul>
         <a href="#audit" class="btn btn-light" style="justify-content:center">Start here</a>
       </div>
-      <div class="tier feat" data-reveal class="d1">
+      <div class="tier feat d1" data-reveal>
         <span class="flag">Most popular</span>
-        <span class="tn">Foundation</span><div class="intro-tag">Intro rate</div><div class="pr">$1,200</div>
-        <div class="ts">The complete presence most businesses need, done in full.</div>
+        <span class="tn">Foundation</span><div class="intro-tag">Intro · 50% off</div><div class="pr"><span class="was">$2,400</span>$1,200 <small>one-time</small></div>
+        <div class="ts">The complete presence most businesses need, so customers actually find you.</div>
         <ul>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4–5 page site + domain</li>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full Google profile + photos</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-page site + domain</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Google Business Profile claimed &amp; optimized</li>
           <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Bing, Apple Maps, Yelp + directories</li>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Submitted for indexing</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Submitted to Google for indexing</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>See exactly how customers find you, set up for you</li>
         </ul>
         <a href="#audit" class="btn btn-ink" style="justify-content:center">Get started</a>
       </div>
       <div class="tier" data-reveal>
-        <span class="tn">Foundation+</span><div class="intro-tag">Intro rate</div><div class="pr">$1,950</div>
-        <div class="ts">For businesses that want an on-site shoot, booking, and more pages.</div>
+        <span class="tn">Foundation+</span><div class="pr custom">Custom</div>
+        <div class="ts">For bigger or one-of-a-kind jobs. Priced to your project, never a guess.</div>
         <ul>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 8 pages</li>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Booking / contact automation</li>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Industry directories</li>
-          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>On-site photo &amp; video shoot (Front Range)</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Foundation, plus:</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>More pages, online ordering, custom features</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Booking &amp; scheduling automation</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>On-site photo &amp; video shoot (add-on)</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-location? Let's scope it together.</li>
         </ul>
-        <a href="#audit" class="btn btn-light" style="justify-content:center">Go bigger</a>
+        <a href="#audit" class="btn btn-light" style="justify-content:center">Let's talk</a>
       </div>
     </div>
-    <div class="care" data-reveal>Want us to keep the lights on? <b>Foundation Care: $89/mo</b> covers hosting, domain, and security, plus up to 1 hour of edits each month (swap a photo, update your hours, post an update). Cancel anytime.</div>
-    <div class="compare" data-reveal>A year with us runs about <b>$1,200</b>. A year with the big bundled services runs <b>$5,000–$6,600</b>. That's on a contract, and you don't even own what they build.</div>
+    <div class="care" data-reveal>Want me to keep the lights on? <b>Foundation Care: $89/mo</b> for your first year, then $179/mo, covers hosting, domain, security, a monthly check on how customers are finding you, plus up to 1 hour of edits (swap a photo, update your hours, post an update). Cancel anytime.</div>
+    <div class="compare" data-reveal>Foundation is <b>$1,200</b> today, half off while founding rates last. The big bundled services run <b>$5,000–$6,600 a year</b>, on a contract, and you don't even own what they build.</div>
   </div>
 </section>
 
@@ -537,7 +542,7 @@
     <div>
       <span class="eyebrow kicker" data-reveal>Where we work</span>
       <h2 class="h" data-reveal>Front Range, or anywhere. <span class="am">Same result.</span></h2>
-      <p class="lead" data-reveal>Based in Aurora, building for businesses across Colorado and beyond. The whole build and profile setup happen online, so your location is never a barrier. Want me on-site for a proper photo and video shoot? That's part of Foundation+ for Front Range businesses.</p>
+      <p class="lead" data-reveal>Based in Aurora, building for businesses across Colorado and beyond. The whole build and profile setup happen online, so your location is never a barrier. Want me on-site for a proper photo and video shoot? That's an add-on for Front Range businesses.</p>
     </div>
     <div class="where-img" data-reveal>
       <img src="https://pub.hyperagent.com/api/published/pbf01KSS38TJ4_JT44J0NCQXJX2WPY/2f13d260-616b-467e-8f04-f84ceca211b2.png" alt="Small-business owner in her shop doorway" loading="lazy">
@@ -551,7 +556,7 @@
   <div class="wrap">
     <div class="talk-box" data-reveal>
       <span class="eyebrow">Straight talk</span>
-      <p>We get you found, then get out of your way. We're not an ad agency, and we won't promise you the #1 spot on Google. That's a separate, ongoing job. When you're ready for it, we'll point you to someone good.</p>
+      <p>We get you found, then get out of your way. We're not an ad agency, and we won't promise you the #1 spot on Google. That's a separate, ongoing job. Once your foundation is solid, we can talk about what's next.</p>
     </div>
   </div>
 </section>
