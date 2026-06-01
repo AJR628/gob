@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>gobeefound: get found everywhere your customers look</title>
-<meta name="description" content="We build your website, claim your Google profile, and put your business on the map. Once. You own it, and you never touch it again. Flat fee, no contracts, no monthly bills.">
+<meta name="description" content="We build your website, claim your Google Business Profile, and put your business on the map. Once. You own it, and you never touch it again. Flat fee, no contracts, no monthly bills.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 64 64'%3E%3Crect width%3D'64' height%3D'64' rx%3D'15' fill%3D'%23171210'%2F%3E%3Cellipse cx%3D'21.5' cy%3D'27' rx%3D'12' ry%3D'6' fill%3D'%23F7A012' opacity%3D'.5' transform%3D'rotate(-22 21.5 27)'%2F%3E%3Cellipse cx%3D'42.5' cy%3D'27' rx%3D'12' ry%3D'6' fill%3D'%23F7A012' opacity%3D'.5' transform%3D'rotate(22 42.5 27)'%2F%3E%3Cpath d%3D'M32 17c2.1 0 3.8 1.7 3.8 3.8 0 1.1-.5 2.1-1.3 2.8 3.7 1.8 6.1 5.8 6.1 11 0 7-3.9 12.9-8.6 12.9s-8.6-5.9-8.6-12.9c0-5.2 2.4-9.2 6.1-11-.8-.7-1.3-1.7-1.3-2.8C28.2 18.7 29.9 17 32 17Z' fill%3D'%23F7A012'%2F%3E%3Cpath d%3D'M26.6 28.4h10.8M25.8 34h12.4M27.6 39.6h8.8' stroke%3D'%23171210' stroke-width%3D'2.2' stroke-linecap%3D'round'%2F%3E%3C%2Fsvg%3E">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9N7MVZ6064"></script>
@@ -88,7 +88,9 @@
   .hero h1 .found svg path{stroke:var(--amber);stroke-width:8;fill:none;stroke-linecap:round;stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1s var(--ease) 1.1s forwards}
   @keyframes draw{to{stroke-dashoffset:0}}
   .hero h1 .l2{display:block;font-size:clamp(1.5rem,4.4vw,3rem);font-weight:700;letter-spacing:-.02em;color:var(--cream);margin-top:.35em;line-height:1}
-  .hero-sub{font-size:clamp(1.05rem,1.6vw,1.25rem);font-weight:500;max-width:46ch;margin:1.7rem 0 2.1rem;color:rgba(255,246,233,.96);text-shadow:0 1px 14px rgba(0,0,0,.55)}
+  .hero-sub{font-size:clamp(1.05rem,1.6vw,1.25rem);font-weight:500;max-width:46ch;margin:1.4rem 0 2.1rem;color:rgba(255,246,233,.96);text-shadow:0 1px 14px rgba(0,0,0,.55)}
+  .hero-svcs{margin-top:1.2rem;font-size:.82rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,246,233,.74)}
+  @media(max-width:520px){.hero-svcs{font-size:.72rem;letter-spacing:.12em}}
   .hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
   .hero-eyebrow{margin-bottom:1.6rem}
 
@@ -346,8 +348,9 @@
   </div>
   <div class="wrap hero-inner">
     <span class="eyebrow on-dark hero-eyebrow" data-reveal><span class="bdot"></span>Done-for-you online presence</span>
-    <h1 data-reveal>Get <span class="found">found.<svg viewBox="0 0 300 24" preserveAspectRatio="none"><path d="M4 16C70 6 230 6 296 12"/></svg></span><span class="l2">Put your business on the map.</span></h1>
-    <p class="hero-sub d1" data-reveal>We build your website, claim your Google profile, and get you listed everywhere customers look. The whole foundation, done for you. You own it, and you never touch it again.</p>
+    <h1 data-reveal>Get <span class="found">found<svg viewBox="0 0 300 24" preserveAspectRatio="none"><path d="M4 16C70 6 230 6 296 12"/></svg></span> online.<span class="l2">Own your presence.</span></h1>
+    <div class="hero-svcs" data-reveal>Websites &middot; Google Business Profiles &middot; Local Listings</div>
+    <p class="hero-sub d1" data-reveal>We build your website, claim your Google Business Profile, and get you listed everywhere customers look. The whole foundation, done for you. You own it, and you never touch it again.</p>
     <div class="hero-cta d2" data-reveal>
       <a href="#audit" class="btn btn-amber" data-magnetic>Get a free presence audit <span class="arr">→</span></a>
       <a href="#how" class="btn btn-light">See how it works</a>
