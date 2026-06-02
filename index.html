@@ -287,15 +287,44 @@
   @media(max-width:560px){.af-row{flex-direction:column;gap:0}}
   .af-field{display:flex;flex-direction:column;gap:.4rem;flex:1;margin-bottom:1.1rem}
   .af-field span{font-size:.82rem;font-weight:600;color:var(--amber-soft);letter-spacing:.02em}
-  .af-field input,.af-field select{font-family:var(--sans);font-size:1rem;padding:.85rem 1rem;border-radius:12px;border:1px solid rgba(255,246,233,.22);background:rgba(255,246,233,.06);color:var(--cream);transition:border-color .25s,background .25s}
-  .af-field input::placeholder{color:rgba(255,246,233,.4)}
-  .af-field input:focus,.af-field select:focus{outline:none;border-color:var(--amber);background:rgba(255,246,233,.1)}
+  .af-field input,.af-field select,.af-field textarea{font-family:var(--sans);font-size:1rem;padding:.85rem 1rem;border-radius:12px;border:1px solid rgba(255,246,233,.22);background:rgba(255,246,233,.06);color:var(--cream);transition:border-color .25s,background .25s}
+  .af-field input::placeholder,.af-field textarea::placeholder{color:rgba(255,246,233,.4)}
+  .af-field input:focus,.af-field select:focus,.af-field textarea:focus{outline:none;border-color:var(--amber);background:rgba(255,246,233,.1)}
   .af-field select{appearance:none;-webkit-appearance:none;cursor:pointer}
   .af-field select option{color:#171210}
+  .af-field textarea{min-height:92px;resize:vertical;line-height:1.5}
   .af-submit{margin-top:.4rem;width:100%;justify-content:center;border:none;font-size:1.05rem;padding:1.05rem}
   .af-fine{font-size:.82rem;color:rgba(255,246,233,.6);text-align:center;margin-top:.9rem}
   .hp{position:absolute!important;left:-9999px}
   .form-done{background:rgba(255,246,233,.08);border:1px solid var(--amber);border-radius:16px;padding:2.2rem 1.5rem;text-align:center;font-family:var(--disp);font-weight:600;font-size:1.3rem;color:var(--cream);max-width:560px;margin:2.2rem auto 0}
+
+  /* FOUNDING CLIENT OFFER */
+  .founding{background:var(--ink-2);color:var(--cream);position:relative;overflow:hidden;border-top:1px solid var(--line-d)}
+  .founding::before{content:"";position:absolute;top:-25%;right:-12%;width:55%;height:150%;background:radial-gradient(circle,rgba(247,160,18,.16),transparent 60%);pointer-events:none}
+  .founding .wrap{position:relative;z-index:2}
+  .founding .kicker{margin-bottom:1.3rem}
+  .fo-card{background:var(--cream);color:var(--ink);border:2px solid var(--amber);border-radius:24px;padding:clamp(1.7rem,4vw,2.8rem);max-width:880px;margin-inline:auto;text-align:left;box-shadow:0 34px 70px -34px rgba(0,0,0,.6)}
+  .fo-card h2{font-family:var(--disp);font-weight:800;font-size:clamp(2rem,5vw,3.1rem);line-height:1;letter-spacing:-.02em}
+  .fo-sub{font-size:1.15rem;color:var(--ink-soft);margin-top:1rem;max-width:50ch}
+  .fo-grid{display:grid;grid-template-columns:1.45fr .85fr;gap:1.8rem;margin-top:1.9rem;align-items:center}
+  @media(max-width:680px){.fo-grid{grid-template-columns:1fr;gap:1.4rem}}
+  .fo-receive{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+  .fo-receive li{display:flex;gap:.6rem;align-items:flex-start;font-weight:600;font-size:1rem}
+  .fo-receive .ck{width:21px;height:21px;border-radius:50%;background:var(--green);display:grid;place-items:center;flex:none;margin-top:.1rem}
+  .fo-receive .ck svg{width:11px;height:11px}
+  .fo-spots{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.5rem;font-weight:700;font-size:.98rem;color:var(--amber-deep)}
+  .fo-spots .bdot{width:9px;height:9px;border-radius:50%;background:var(--amber-2);box-shadow:0 0 0 0 rgba(242,112,27,.6);animation:pulse 2.2s infinite;flex:none}
+  .fo-value{background:var(--ink);color:var(--cream);border-radius:18px;padding:1.6rem 1.3rem;text-align:center}
+  .fo-value .big{font-family:var(--disp);font-weight:800;font-size:2.9rem;line-height:1;color:var(--amber)}
+  .fo-value .lbl{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,246,233,.66);margin-top:.35rem}
+  .fo-value .free{font-size:.95rem;margin-top:.6rem;color:rgba(255,246,233,.9)}
+  .fo-value .btn{margin-top:1.15rem;width:100%;justify-content:center}
+  .fo-copy{font-size:1rem;color:var(--ink-soft);margin-top:1.4rem;max-width:64ch}
+  .fo-scope{margin-top:1.4rem;font-size:.86rem;line-height:1.55;color:var(--muted);border-top:1px solid var(--line);padding-top:1.1rem;max-width:74ch}
+  .founding-apply{max-width:760px;margin:2.6rem auto 0;text-align:left}
+  .founding-apply .fa-h{font-family:var(--disp);font-weight:700;font-size:clamp(1.5rem,3.5vw,2.1rem);letter-spacing:-.01em}
+  .founding-apply .fa-note{color:rgba(255,246,233,.72);font-size:1rem;margin-top:.6rem;max-width:56ch}
+  .founding-apply .audit-form{margin:1.6rem 0 0;max-width:100%}
 
   /* mobile refinements */
   @media(max-width:760px){
@@ -539,6 +568,90 @@
   </div>
 </section>
 
+<!-- FOUNDING CLIENT OFFER -->
+<section class="sec founding" id="founding">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow on-dark kicker" data-reveal><span class="bdot"></span>Founding clients &middot; limited</span>
+
+    <div class="fo-card" data-reveal>
+      <h2>Founding Client Offer</h2>
+      <p class="fo-sub">GoBeeFound is accepting up to 3 qualifying local businesses for a free starter website package.</p>
+      <div class="fo-grid">
+        <div>
+          <ul class="fo-receive">
+            <li><span class="ck"><svg viewBox="0 0 12 12" fill="none"><path d="m2 6 2.5 2.5L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>A domain name for your business</li>
+            <li><span class="ck"><svg viewBox="0 0 12 12" fill="none"><path d="m2 6 2.5 2.5L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>A clean 1&ndash;2 page website</li>
+            <li><span class="ck"><svg viewBox="0 0 12 12" fill="none"><path d="m2 6 2.5 2.5L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Basic mobile-friendly setup</li>
+            <li><span class="ck"><svg viewBox="0 0 12 12" fill="none"><path d="m2 6 2.5 2.5L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Contact form or call-to-action section</li>
+            <li><span class="ck"><svg viewBox="0 0 12 12" fill="none"><path d="m2 6 2.5 2.5L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Launch support</li>
+          </ul>
+          <div class="fo-spots"><span class="bdot"></span>Only 3 founding client spots are available.</div>
+        </div>
+        <div class="fo-value">
+          <div class="big">$900</div>
+          <div class="lbl">Estimated value</div>
+          <div class="free">Free for selected founding clients</div>
+          <a href="#founding-apply" class="btn btn-amber">Apply for a Free Starter Website <span class="arr">&rarr;</span></a>
+        </div>
+      </div>
+      <p class="fo-copy">This offer is designed for local businesses that need a simple, professional online presence and are ready to provide basic business information, services, logo/photos if available, and feedback during the build.</p>
+      <p class="fo-scope">Founding client offer is limited to qualifying businesses and includes a starter website package only. Domain availability is not guaranteed. Ongoing updates, hosting management, Google Business Profile work, extra pages, advanced features, copywriting beyond the starter scope, and future domain renewals may require a separate paid plan. GoBeeFound may decline projects that are not a good fit.</p>
+    </div>
+
+    <div class="founding-apply" id="founding-apply">
+      <div class="fa-h" data-reveal>Founding Client Application</div>
+      <p class="fa-note" data-reveal>Tell me a little about your business. If it&rsquo;s a good fit for one of the founding spots, I&rsquo;ll reach out. No pressure, no obligation.</p>
+      <form name="founding-client" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="foundingForm" class="audit-form" data-reveal>
+        <input type="hidden" name="form-name" value="founding-client">
+        <p class="hp"><label>Leave this empty: <input name="bot-field"></label></p>
+        <div class="af-row">
+          <label class="af-field"><span>Your name</span><input type="text" name="name" required placeholder="Jordan Smith"></label>
+          <label class="af-field"><span>Business / organization name</span><input type="text" name="business" required placeholder="Sand Creek Roasters"></label>
+        </div>
+        <div class="af-row">
+          <label class="af-field"><span>Email</span><input type="email" name="email" required placeholder="you@business.com"></label>
+          <label class="af-field"><span>Phone (optional)</span><input type="tel" name="phone" placeholder="(720) 555-0123"></label>
+        </div>
+        <div class="af-row">
+          <label class="af-field"><span>Current website (if any)</span><input type="text" name="current_website" placeholder="example.com &mdash; or leave blank"></label>
+          <label class="af-field"><span>Have a Google Business Profile?</span>
+            <select name="google_profile">
+              <option>Not sure</option>
+              <option>Yes, claimed</option>
+              <option>Exists but unclaimed</option>
+              <option>No</option>
+            </select>
+          </label>
+        </div>
+        <div class="af-row">
+          <label class="af-field"><span>Ideal domain name (if you have one in mind)</span><input type="text" name="ideal_domain" placeholder="yourbusiness.com"></label>
+          <label class="af-field"><span>Do you have a logo / photos already?</span>
+            <select name="assets">
+              <option>Not yet</option>
+              <option>Logo only</option>
+              <option>Photos only</option>
+              <option>Logo and photos</option>
+            </select>
+          </label>
+        </div>
+        <label class="af-field"><span>What does your business do?</span><textarea name="business_does" rows="2" placeholder="e.g., Neighborhood coffee roaster and caf&eacute;"></textarea></label>
+        <label class="af-field"><span>What&rsquo;s the main reason you want a website?</span><textarea name="main_reason" rows="2" placeholder="What would a website help you accomplish?"></textarea></label>
+        <label class="af-field"><span>What services or pages would you want included?</span><textarea name="wanted_pages" rows="2" placeholder="e.g., Home, services, hours, contact"></textarea></label>
+        <label class="af-field"><span>Best way to contact you</span>
+          <select name="contact_pref">
+            <option>Email</option>
+            <option>Phone call</option>
+            <option>Text message</option>
+          </select>
+        </label>
+        <label class="af-field"><span>Any notes or questions?</span><textarea name="notes" rows="2" placeholder="Anything else you&rsquo;d like me to know (optional)"></textarea></label>
+        <button type="submit" class="btn btn-amber af-submit">Apply for a Free Starter Website <span class="arr">&rarr;</span></button>
+        <p class="af-fine">Applying doesn&rsquo;t guarantee selection. Founding spots are limited to qualifying businesses, and the starter package scope is described above. I&rsquo;ll reply within one business day.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- WHERE -->
 <section class="sec" id="where">
   <div class="wrap where-grid">
@@ -680,16 +793,19 @@
     addEventListener('scroll',function(){var y=scrollY;if(y<innerHeight){heroBg.style.transform='translateY('+(y*.28)+'px)';}},{passive:true});
   }
 
-  // netlify audit form: AJAX submit with graceful inline success (degrades to normal POST without JS)
-  var af=document.getElementById('auditForm');
-  if(af){
-    af.addEventListener('submit',function(e){
+  // netlify forms: AJAX submit with graceful inline success (degrades to normal POST without JS)
+  function wireForm(id,msg){
+    var f=document.getElementById(id);
+    if(!f)return;
+    f.addEventListener('submit',function(e){
       e.preventDefault();
-      var body=new URLSearchParams(new FormData(af)).toString();
-      function done(){af.innerHTML='<div class="form-done">Thanks! Your audit request is in. I\'ll get back to you within one business day.</div>';}
+      var body=new URLSearchParams(new FormData(f)).toString();
+      function done(){f.innerHTML='<div class="form-done">'+msg+'</div>';}
       fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body}).then(done).catch(done);
     });
   }
+  wireForm('auditForm',"Thanks! Your audit request is in. I'll get back to you within one business day.");
+  wireForm('foundingForm',"Thanks for applying! I'll review your info and follow up within one business day if it's a good fit.");
 })();
 </script>
 </body>
