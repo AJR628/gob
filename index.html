@@ -329,6 +329,8 @@
   /* mobile refinements */
   @media(max-width:760px){
     header.nav{padding:14px 0}
+    /* logo-only header on mobile: the hero button + sticky bar already cover the audit CTA, so the duplicate header button is removed to avoid stacking CTAs on one screen */
+    header.nav .nav-links .btn{display:none}
     .hero{min-height:auto;align-items:center;padding-top:5.25rem;padding-bottom:3rem}
     .hero-inner{padding-top:1.2rem;padding-bottom:0}
     .hero-eyebrow{margin-bottom:1.1rem}
@@ -666,6 +668,9 @@
   </div>
 </footer>
 
+<!-- mobile sticky CTA: placed before the script so the element exists when the script runs -->
+<a href="#audit" class="mobile-cta hide" id="mobileCta">Get a free audit <span aria-hidden="true">→</span></a>
+
 <script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -746,11 +751,27 @@
   }
   wireForm('auditForm',"Thanks! Your audit request is in. I'll get back to you within one business day.");
 
-  // mobile sticky CTA: hide once the audit section is reached
-  var mcta=document.getElementById('mobileCta'), auditSec=document.getElementById('audit');
-  if(mcta&&auditSec){var mio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){mcta.classList.add('hide');mio.disconnect();}});},{threshold:.01});mio.observe(auditSec);}
+  // mobile sticky CTA: show only in the mid-scroll band — hidden while the hero
+  // is on screen (the hero already has its own button) and hidden again from the
+  // founding card down through the audit form (each section owns its own action).
+  var mcta=document.getElementById('mobileCta');
+  var heroSec=document.querySelector('.hero');
+  var tailSec=document.getElementById('founding')||document.getElementById('audit');
+  if(mcta){
+    var ctaTick=false;
+    function syncCta(){
+      ctaTick=false;
+      var vh=window.innerHeight||document.documentElement.clientHeight;
+      var heroGone=heroSec?(heroSec.getBoundingClientRect().bottom<vh*0.45):true;
+      var tailNear=tailSec?(tailSec.getBoundingClientRect().top<vh*0.85):false;
+      mcta.classList.toggle('hide',!(heroGone&&!tailNear));
+    }
+    function onCtaScroll(){if(!ctaTick){ctaTick=true;requestAnimationFrame(syncCta);}}
+    addEventListener('scroll',onCtaScroll,{passive:true});
+    addEventListener('resize',onCtaScroll,{passive:true});
+    syncCta();
+  }
 })();
 </script>
-<a href="#audit" class="mobile-cta" id="mobileCta">Get a free audit <span aria-hidden="true">→</span></a>
 </body>
 </html>
