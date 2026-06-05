@@ -30,23 +30,17 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<!-- Structured data: ProfessionalService + Organization (service-area business, Aurora/Denver metro) -->
+<!-- Structured data: LocalBusiness (SAB, Aurora/Denver metro) + discrete Service entities -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "@id": "https://gobeefound.com/#organization",
       "name": "gobeefound",
       "url": "https://gobeefound.com/",
-      "logo": "https://gobeefound.com/apple-touch-icon.png"
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://gobeefound.com/#service",
-      "name": "gobeefound",
-      "url": "https://gobeefound.com/",
+      "logo": "https://gobeefound.com/apple-touch-icon.png",
       "image": "https://gobeefound.com/og-cover.png",
       "telephone": "+1-720-767-1898",
       "email": "contact@gobeefound.com",
@@ -66,17 +60,39 @@
         { "@type": "City", "name": "Lakewood" },
         { "@type": "City", "name": "Englewood" },
         { "@type": "AdministrativeArea", "name": "Denver metropolitan area" }
-      ],
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Small business website (Online)",
+      "description": "A 1–2 page website on a domain you own. Mobile-friendly, click-to-call, fast. One flat fee.",
       "provider": { "@id": "https://gobeefound.com/#organization" },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Website & Local Visibility Packages",
-        "itemListElement": [
-          { "@type": "Offer", "name": "Online — 1–2 page website + domain", "price": "450", "priceCurrency": "USD" },
-          { "@type": "Offer", "name": "Foundation — up to 5-page website + Google Business Profile + directories", "price": "1200", "priceCurrency": "USD" },
-          { "@type": "Offer", "name": "Foundation+ — custom", "price": "0", "priceCurrency": "USD" }
-        ]
+      "offers": {
+        "@type": "Offer",
+        "price": "450",
+        "priceCurrency": "USD",
+        "url": "https://gobeefound.com/#pricing",
+        "availability": "https://schema.org/InStock"
       }
+    },
+    {
+      "@type": "Service",
+      "name": "Foundation — website + Google Business Profile + directories",
+      "description": "Up to 5-page website on a domain you own, plus Google Business Profile claimed and optimized, plus Bing, Apple Maps, Yelp, and the directories behind them. Submitted to Google for indexing.",
+      "provider": { "@id": "https://gobeefound.com/#organization" },
+      "offers": {
+        "@type": "Offer",
+        "price": "1200",
+        "priceCurrency": "USD",
+        "url": "https://gobeefound.com/#pricing",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Foundation+ — custom scope",
+      "description": "Custom-scoped builds: additional pages, online ordering, booking and scheduling automation, on-site photo and video shoot, and multi-location work. Priced per project, by quote.",
+      "provider": { "@id": "https://gobeefound.com/#organization" }
     }
   ]
 }
@@ -340,6 +356,11 @@
   .foot-inner{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;font-size:.88rem}
   .foot-links{display:flex;gap:1.4rem}
   .foot-links a:hover{color:var(--amber)}
+  .foot-meta{text-align:right;line-height:1.65}
+  .foot-meta a{color:rgba(255,246,233,.85)}
+  .foot-meta a:hover{color:var(--amber)}
+  .foot-meta .c{opacity:.55}
+  @media(max-width:640px){.foot-meta{text-align:left}}
 
   /* ===== PUSH-FURTHER LAYER ===== */
   /* scroll progress */
@@ -472,7 +493,7 @@
     <span class="eyebrow on-dark hero-eyebrow" data-reveal><span class="bdot"></span>Done-for-you online presence</span>
     <h1 data-reveal>Get <span class="found">found<svg viewBox="0 0 300 24" preserveAspectRatio="none"><path d="M4 16C70 6 230 6 296 12"/></svg></span> online.<span class="l2">Own your online presence.</span></h1>
     <div class="hero-svcs" data-reveal>Websites &middot; Google Business Profiles &middot; Local Listings</div>
-    <p class="hero-sub d1" data-reveal>We build your website, claim your Google Business Profile, and get you listed everywhere customers look. The whole foundation, done for you. You own it, and you never touch it again.</p>
+    <p class="hero-sub d1" data-reveal>We build your website, claim your Google Business Profile, and get you listed everywhere customers look &mdash; for small businesses in Aurora and the Denver metro. The whole foundation, done for you. You own it.</p>
     <div class="hero-cta d2" data-reveal>
       <a href="#audit" class="btn btn-amber" data-magnetic>Get a free presence audit <span class="arr">→</span></a>
       <a href="#how" class="btn btn-light">See how it works</a>
@@ -740,7 +761,11 @@
       <span>gobeefound</span>
     </a>
     <div class="foot-links"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#audit">Free audit</a></div>
-    <div>Online everywhere · © 2026 gobeefound</div>
+    <div class="foot-meta">
+      Aurora, CO &middot; serving the Denver metro<br>
+      <a href="tel:+17207671898">(720)&nbsp;767-1898</a> &middot; <a href="mailto:contact@gobeefound.com">contact@gobeefound.com</a><br>
+      <span class="c">&copy; 2026 gobeefound</span>
+    </div>
   </div>
 </footer>
 

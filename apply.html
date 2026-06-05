@@ -301,6 +301,11 @@
   .foot-inner{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;font-size:.88rem}
   .foot-links{display:flex;gap:1.4rem}
   .foot-links a:hover{color:var(--amber)}
+  .foot-meta{text-align:right;line-height:1.65}
+  .foot-meta a{color:rgba(255,246,233,.85)}
+  .foot-meta a:hover{color:var(--amber)}
+  .foot-meta .c{opacity:.55}
+  @media(max-width:640px){.foot-meta{text-align:left}}
 
   /* ===== PUSH-FURTHER LAYER ===== */
   /* scroll progress */
@@ -498,7 +503,11 @@
       <span>gobeefound</span>
     </a>
     <div class="foot-links"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/#audit">Free audit</a></div>
-    <div>Online everywhere · © 2026 gobeefound</div>
+    <div class="foot-meta">
+      Aurora, CO &middot; serving the Denver metro<br>
+      <a href="tel:+17207671898">(720)&nbsp;767-1898</a> &middot; <a href="mailto:contact@gobeefound.com">contact@gobeefound.com</a><br>
+      <span class="c">&copy; 2026 gobeefound</span>
+    </div>
   </div>
 </footer>
 
