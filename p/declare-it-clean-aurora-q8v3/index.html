@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Declare It Clean | Commercial, residential & specialty cleaning</title>
+  <meta name="description" content="Private website concept for Declare It Clean, organizing commercial janitorial, residential surface care, and specialty cleaning services for Aurora and surrounding areas.">
+  <meta name="theme-color" content="#0b2832">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Declare It Clean | Commercial, residential & specialty cleaning">
+  <meta property="og:description" content="A private website concept prepared by GoBeeFound for Declare It Clean.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script data-goatcounter="https://gobeefound.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+  <style>
+    :root{
+      --deep:#0b2832;
+      --deep-2:#061b22;
+      --deep-3:#153f49;
+      --teal:#2d887f;
+      --teal-light:#dcece8;
+      --teal-pale:#edf6f3;
+      --orange:#e26d3f;
+      --gold:#efbb65;
+      --cream:#fbf8f1;
+      --paper:#fffefa;
+      --ink:#152b31;
+      --muted:#5d6c6f;
+      --line:#d8e0dc;
+      --shadow:0 20px 52px rgba(8,40,50,.11);
+      --radius:22px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:148px;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:16px;line-height:1.65;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+    body,main{overflow-x:clip}
+    img,svg{display:block;max-width:100%}
+    a{color:inherit}
+    h1,h2,h3,p{margin:0}
+    h1,h2{font-family:'Newsreader',Georgia,serif;font-weight:600;line-height:.98;letter-spacing:-.035em}
+    h3{line-height:1.2;letter-spacing:-.02em}
+    .container{width:min(1180px,100%);margin:0 auto;padding:0 24px}
+    .skip{position:absolute;left:-9999px;top:0;z-index:20000;background:#fff;color:var(--deep);padding:12px 18px;font-weight:700}
+    .skip:focus{left:10px;top:8px}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:6px}
+
+    /* Private-concept safeguard */
+    .concept-banner{position:sticky;top:0;z-index:10000;background:#171210;color:#f4ece0;border-bottom:2px solid #e3a01f;padding:8px 18px;text-align:center;font-size:13px;line-height:1.5}
+    .concept-banner strong,.concept-banner b{color:#e3a01f}
+
+    /* Proposed business site */
+    .site-header{position:sticky;top:var(--banner-height,40px);z-index:1000;background:rgba(255,254,250,.94);border-bottom:1px solid rgba(11,40,50,.12);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%)}
+    .header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--deep);white-space:nowrap}
+    .brand-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--deep);color:#fff;font-family:'Newsreader',Georgia,serif;font-size:19px;letter-spacing:-.06em;box-shadow:inset 0 0 0 4px rgba(255,255,255,.1)}
+    .brand-mark::after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--orange);transform:translate(16px,-15px)}
+    .brand-copy{display:grid;line-height:1}
+    .brand-copy strong{font-family:'Newsreader',Georgia,serif;font-size:21px;letter-spacing:-.04em}
+    .brand-copy small{margin-top:4px;color:var(--teal);font-size:8.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .desktop-nav{display:flex;align-items:center;gap:25px}
+    .desktop-nav a{color:#41575c;text-decoration:none;font-size:14px;font-weight:700;padding:10px 0}
+    .desktop-nav a:hover{color:var(--teal)}
+    .header-call{display:inline-flex;align-items:center;gap:8px;background:var(--deep);color:#fff;text-decoration:none;padding:11px 16px;border-radius:99px;font-size:14px;font-weight:700}
+    .header-call svg{width:16px;height:16px;color:var(--gold)}
+    .mobile-menu{display:none;position:relative}
+    .mobile-menu summary{list-style:none;cursor:pointer;border:1px solid var(--line);border-radius:99px;padding:9px 13px;color:var(--deep);font-size:14px;font-weight:700}
+    .mobile-menu summary::-webkit-details-marker{display:none}
+    .mobile-menu summary::after{content:' +';color:var(--teal);font-size:17px}
+    .mobile-menu[open] summary::after{content:' ×'}
+    .mobile-links{position:absolute;right:0;top:49px;width:230px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:9px;box-shadow:var(--shadow)}
+    .mobile-links a{display:block;padding:11px 10px;border-radius:9px;text-decoration:none;color:var(--deep);font-weight:700}
+    .mobile-links a:hover{background:var(--teal-pale)}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:99px;padding:13px 20px;text-decoration:none;font-size:15px;font-weight:800;transition:transform .16s ease,background-color .16s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn svg{width:17px;height:17px;flex:none}
+    .btn-orange{background:var(--orange);color:#fff;box-shadow:0 12px 28px rgba(226,109,63,.25)}
+    .btn-orange:hover{background:#c8572e}
+    .btn-outline{border:1px solid rgba(255,255,255,.42);color:#fff;background:rgba(255,255,255,.06)}
+    .btn-outline:hover{background:rgba(255,255,255,.13)}
+    .btn-deep{background:var(--deep);color:#fff}
+    .btn-deep:hover{background:var(--deep-3)}
+
+    .hero{position:relative;background:var(--deep);color:#fff;overflow:hidden;padding:82px 0 86px}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(45,136,127,.18),transparent 44%),radial-gradient(circle at 92% 10%,rgba(239,187,101,.16),transparent 28%);pointer-events:none}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}
+    .eyebrow,.kicker{display:flex;align-items:center;gap:10px;color:var(--orange);font-size:11.5px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    .eyebrow::before,.kicker::before{content:"";width:26px;height:2px;background:currentColor}
+    .hero .eyebrow{color:var(--gold);margin-bottom:24px}
+    .hero h1{max-width:700px;font-size:clamp(47px,6.6vw,82px)}
+    .hero h1 span{color:#88c7bd;font-style:italic}
+    .hero-lede{max-width:620px;color:#d0dfe0;font-size:19px;line-height:1.58;margin:26px 0 31px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:27px;color:#b7cbce;font-size:13.5px}
+    .hero-meta span{display:inline-flex;align-items:center;gap:7px}
+    .hero-meta svg{width:15px;height:15px;color:var(--gold)}
+
+    /* Original CSS service-map artwork */
+    .service-map{position:relative;min-height:500px;border-radius:28px;background:#eef5f1;color:var(--deep);border:1px solid rgba(255,255,255,.22);box-shadow:0 24px 60px rgba(0,0,0,.2);overflow:hidden;padding:24px}
+    .service-map::before{content:"";position:absolute;inset:-12%;background:repeating-radial-gradient(circle at 52% 48%,transparent 0 57px,rgba(45,136,127,.12) 58px 59px)}
+    .map-top{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#446167;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .map-top b{color:var(--teal)}
+    .map-core{position:absolute;z-index:2;left:50%;top:49%;transform:translate(-50%,-50%);width:183px;height:183px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:#fff;box-shadow:0 0 0 14px rgba(45,136,127,.13),0 18px 40px rgba(11,40,50,.22)}
+    .map-core::before{content:"";position:absolute;inset:13px;border:1px solid rgba(255,255,255,.19);border-radius:50%}
+    .core-copy{text-align:center;position:relative}
+    .core-copy strong{display:block;font-family:'Newsreader',Georgia,serif;font-size:47px;line-height:.8;letter-spacing:-.07em}
+    .core-copy span{display:block;margin-top:13px;color:#9fd1c9;font-size:9px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    .map-chip{position:absolute;z-index:3;width:158px;background:#fff;border:1px solid #cdded9;border-radius:15px;padding:14px 14px 13px;box-shadow:0 12px 28px rgba(11,40,50,.11)}
+    .map-chip::before{content:"";width:9px;height:9px;border-radius:50%;display:block;margin-bottom:8px;background:var(--orange);box-shadow:0 0 0 5px rgba(226,109,63,.11)}
+    .map-chip strong{display:block;font-size:13px;line-height:1.2}
+    .map-chip span{display:block;color:#6a7d7f;font-size:10px;line-height:1.35;margin-top:5px}
+    .chip-one{left:24px;top:88px}.chip-two{right:24px;top:147px}.chip-three{left:45px;bottom:37px}
+    .map-spark{position:absolute;right:49px;bottom:50px;color:var(--gold);width:37px;filter:drop-shadow(0 5px 9px rgba(239,187,101,.35))}
+    .map-note{position:absolute;right:24px;bottom:20px;color:#718285;font-size:9px;letter-spacing:.05em;text-transform:uppercase}
+
+    .trust-bar{background:#fff;border-bottom:1px solid var(--line);box-shadow:0 10px 28px rgba(11,40,50,.045)}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .trust-item{display:flex;align-items:center;gap:12px;padding:25px 24px;border-right:1px solid var(--line)}
+    .trust-item:first-child{padding-left:0}.trust-item:last-child{border:0}
+    .trust-icon{width:37px;height:37px;flex:none;display:grid;place-items:center;border-radius:50%;background:var(--teal-pale);color:var(--teal)}
+    .trust-icon svg{width:18px;height:18px}
+    .trust-item strong{display:block;color:var(--deep);font-size:14px;line-height:1.25}
+    .trust-item span{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+
+    .section{padding:92px 0}
+    .section-cream{background:var(--cream)}
+    .section-teal{background:var(--teal-pale)}
+    .section-deep{background:var(--deep);color:#fff}
+    .section-head{max-width:730px;margin-bottom:43px}
+    .section-head .kicker{margin-bottom:15px}
+    .section-head h2{font-size:clamp(38px,5.2vw,59px);color:var(--deep);margin-bottom:17px}
+    .section-head p{color:var(--muted);font-size:17px;max-width:660px}
+    .section-deep .section-head h2{color:#fff}.section-deep .section-head p{color:#bdd0d2}.section-deep .kicker{color:var(--gold)}
+
+    .pathway-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .pathway{position:relative;min-height:350px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 27px 25px;box-shadow:0 10px 28px rgba(11,40,50,.045);overflow:hidden;display:flex;flex-direction:column}
+    .pathway::after{content:attr(data-number);position:absolute;right:-5px;top:-27px;font-family:'Newsreader',Georgia,serif;color:rgba(45,136,127,.07);font-size:132px;line-height:1}
+    .pathway-icon{position:relative;z-index:1;width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:var(--deep);color:#fff;margin-bottom:24px}
+    .pathway-icon svg{width:24px;height:24px}
+    .pathway:nth-child(2) .pathway-icon{background:var(--teal)}
+    .pathway:nth-child(3) .pathway-icon{background:var(--orange)}
+    .pathway h3{position:relative;z-index:1;color:var(--deep);font-size:22px;margin-bottom:10px}
+    .pathway p{position:relative;z-index:1;color:var(--muted);font-size:14.5px;line-height:1.57}
+    .pathway a{display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding-top:24px;color:var(--teal);font-size:13px;font-weight:800;text-decoration:none}
+    .pathway a::after{content:'\2192';font-size:18px;transition:transform .15s ease}.pathway a:hover::after{transform:translateX(3px)}
+
+    .capability-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:63px;align-items:start}
+    .capability-intro{position:sticky;top:170px}
+    .capability-intro h2{font-size:clamp(40px,5vw,58px);color:#fff;margin:17px 0}
+    .capability-intro p{color:#bdd0d2;font-size:17px;max-width:480px}
+    .capability-intro .btn{margin-top:27px}
+    .capability-list{display:grid;gap:13px}
+    .capability-card{display:grid;grid-template-columns:50px 1fr;gap:17px;align-items:start;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:17px;padding:20px}
+    .capability-card .num{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:var(--gold);border:1px solid rgba(239,187,101,.42);font-family:'Newsreader',Georgia,serif;font-size:18px}
+    .capability-card h3{font-size:17px;color:#fff;margin:2px 0 6px}
+    .capability-card p{color:#b9ccce;font-size:14px;line-height:1.55}
+
+    .surface-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center}
+    .surface-copy .section-head{margin-bottom:24px}
+    .service-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
+    .service-tags span{display:inline-flex;padding:9px 12px;border:1px solid #cbdad6;border-radius:99px;background:#fff;color:#365158;font-size:12.5px;font-weight:700}
+    .surface-board{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;background:#fff;border:1px solid var(--line);border-radius:26px;padding:17px;box-shadow:var(--shadow);transform:rotate(1.2deg)}
+    .surface-tile{position:relative;min-height:166px;border-radius:16px;overflow:hidden;padding:18px;display:flex;align-items:flex-end;color:#fff}
+    .surface-tile strong{position:relative;z-index:2;font-size:14px}
+    .surface-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(6,27,34,.75))}
+    .surface-tile:nth-child(1){background:repeating-linear-gradient(83deg,#78aaa2 0 3px,#95bdb6 3px 6px,#bed7d0 6px 10px)}
+    .surface-tile:nth-child(2){background:repeating-linear-gradient(45deg,#e9dcc9 0 34px,#bdab95 35px 37px),repeating-linear-gradient(-45deg,transparent 0 34px,#a89480 35px 37px)}
+    .surface-tile:nth-child(3){background:radial-gradient(circle at 28% 24%,rgba(255,255,255,.45),transparent 16%),repeating-linear-gradient(120deg,#8b746b 0 7px,#a89084 7px 13px)}
+    .surface-tile:nth-child(4){background:linear-gradient(145deg,#7fc5cd,#2c7586)}
+    .surface-label{grid-column:1/-1;text-align:center;color:#7a8989;font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;padding:2px 0 0}
+
+    .specialty-wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:start}
+    .specialty-cards{display:grid;gap:14px}
+    .specialty-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:16px;padding:22px 23px}
+    .specialty-card:nth-child(2){border-left-color:var(--orange)}
+    .specialty-card:nth-child(3){border-left-color:var(--gold)}
+    .specialty-card h3{font-size:19px;color:var(--deep);margin-bottom:7px}
+    .specialty-card p{color:var(--muted);font-size:14px;line-height:1.58}
+    .scope-note{background:var(--deep);color:#fff;border-radius:22px;padding:29px;position:relative;overflow:hidden}
+    .scope-note::after{content:"?";position:absolute;right:13px;bottom:-45px;font-family:'Newsreader',Georgia,serif;color:rgba(255,255,255,.06);font-size:180px;line-height:1}
+    .scope-note .kicker{color:var(--gold);margin-bottom:14px}
+    .scope-note h3{position:relative;z-index:1;font-family:'Newsreader',Georgia,serif;font-size:32px;line-height:1.05;margin-bottom:14px}
+    .scope-note p{position:relative;z-index:1;color:#c2d3d5;font-size:14.5px}
+    .scope-note ul{position:relative;z-index:1;margin:20px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+    .scope-note li{display:flex;gap:9px;color:#edf5f4;font-size:13.5px}
+    .scope-note li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);margin-top:8px;flex:none}
+
+    .story-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:64px;align-items:center}
+    .story-art{position:relative;min-height:460px;border-radius:27px;background:linear-gradient(145deg,#cfe3dc,#f5e1bd);border:1px solid rgba(11,40,50,.1);overflow:hidden;box-shadow:var(--shadow)}
+    .story-art::before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;left:-110px;bottom:-120px;background:rgba(45,136,127,.24)}
+    .story-art::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-90px;top:-80px;background:rgba(226,109,63,.2)}
+    .story-monogram{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:195px;height:195px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:#fff;font-family:'Newsreader',Georgia,serif;font-size:65px;letter-spacing:-.08em;box-shadow:0 18px 40px rgba(11,40,50,.24)}
+    .story-monogram::after{content:"Family owned";position:absolute;bottom:-48px;font-family:'DM Sans',sans-serif;color:var(--deep);font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}
+    .story-art-note{position:absolute;left:20px;right:20px;bottom:17px;text-align:center;color:#6b7875;font-size:9px;letter-spacing:.06em;text-transform:uppercase}
+    .story-copy .section-head{margin-bottom:24px}
+    .story-copy>p{color:var(--muted);font-size:16.5px;margin-bottom:15px}
+    .people{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:25px}
+    .person{border-top:2px solid var(--teal);padding-top:13px}
+    .person:nth-child(2){border-color:var(--orange)}
+    .person strong{display:block;color:var(--deep);font-size:15px}.person span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+
+    .community-card{display:grid;grid-template-columns:.7fr 1.3fr;gap:45px;align-items:center;background:var(--deep);color:#fff;border-radius:28px;padding:49px;position:relative;overflow:hidden}
+    .community-card::after{content:"";position:absolute;right:-120px;top:-170px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(239,187,101,.25);box-shadow:0 0 0 35px rgba(239,187,101,.035)}
+    .community-symbol{position:relative;z-index:1;width:170px;height:170px;margin:auto;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.17)}
+    .community-symbol svg{width:76px;height:76px;color:var(--gold)}
+    .community-copy{position:relative;z-index:1}
+    .community-copy .kicker{color:var(--gold);margin-bottom:15px}
+    .community-copy h2{font-size:clamp(36px,4.7vw,54px);margin-bottom:16px}
+    .community-copy p{color:#c6d7d8;font-size:16px;max-width:650px}
+    .community-copy a{display:inline-block;color:var(--gold);font-weight:800;font-size:13px;margin-top:18px}
+
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .why-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:23px;min-height:188px}
+    .why-card .line{width:30px;height:3px;background:var(--orange);margin-bottom:22px}
+    .why-card:nth-child(even) .line{background:var(--teal)}
+    .why-card h3{color:var(--deep);font-size:17px;margin-bottom:8px}
+    .why-card p{color:var(--muted);font-size:13.5px;line-height:1.55}
+
+    .contact-section{background:linear-gradient(125deg,var(--deep-2),var(--deep));color:#fff;padding:91px 0}
+    .contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:68px;align-items:center}
+    .contact-copy .kicker{color:var(--gold);margin-bottom:17px}
+    .contact-copy h2{font-size:clamp(43px,5.7vw,66px);max-width:680px;margin-bottom:17px}
+    .contact-copy p{color:#c2d4d6;font-size:17px;max-width:610px}
+    .contact-panel{background:#fff;color:var(--ink);border-radius:22px;padding:28px;box-shadow:0 20px 46px rgba(0,0,0,.2)}
+    .contact-panel h3{font-size:19px;color:var(--deep);margin-bottom:17px}
+    .contact-link{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:13px;padding:14px;text-decoration:none;margin-top:10px}
+    .contact-link:hover{border-color:var(--teal);background:var(--teal-pale)}
+    .contact-link .icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--teal-pale);color:var(--teal);flex:none}
+    .contact-link svg{width:18px;height:18px}
+    .contact-link small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.09em;font-weight:800}
+    .contact-link strong{display:block;color:var(--deep);font-size:15px;margin-top:1px}
+    .contact-fine{color:#738184;font-size:11.5px;line-height:1.5;margin-top:15px;text-align:center}
+
+    .site-footer{background:var(--deep-2);color:#9eb4b6;padding:39px 0 29px;border-top:1px solid rgba(255,255,255,.12)}
+    .footer-top{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+    .footer-brand{color:#fff;font-family:'Newsreader',Georgia,serif;font-size:22px}
+    .footer-brand span{color:#88c7bd}
+    .footer-top p{font-size:13px;max-width:430px;margin-top:7px}
+    .footer-links{display:flex;flex-wrap:wrap;gap:7px 19px}
+    .footer-links a{color:#d4e1e2;text-decoration:none;font-size:12.5px;font-weight:700}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:27px;padding-top:17px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11.5px}
+    .mobile-call{display:none}
+
+    /* Explicit GoBeeFound boundary and pitch */
+    .gbf-divider{background:#100c0a;border-top:2px solid #e3a01f;padding:25px 0;text-align:center}
+    .gbf-divider .tag{display:inline-flex;align-items:center;gap:9px;color:#e3a01f;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .gbf-divider .tag::before{content:"";width:17px;height:2px;background:#e3a01f}
+    .gbf-divider p{margin-top:8px;color:#9c8d7b;font-size:14px}
+    .gbf-zone{background:#171210;color:#d9cdbf;padding:52px 0 57px}
+    .gbf-why{max-width:1000px;margin:0 auto 42px}
+    .gbf-label{display:block;color:#e3a01f;font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+    .gbf-why h2{font-family:'DM Sans',system-ui,sans-serif;font-size:clamp(28px,4vw,42px);letter-spacing:-.035em;line-height:1.08;color:#fff;margin-bottom:14px}
+    .gbf-intro{color:#c5b7a8;max-width:720px}
+    .gbf-benefits{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:22px 44px}
+    .gbf-benefits li{display:flex;gap:14px;align-items:flex-start}
+    .gbf-benefits .num{width:31px;height:31px;border-radius:8px;background:#e3a01f;color:#1f1b16;display:grid;place-items:center;flex:none;font-size:13px;font-weight:800}
+    .gbf-benefits h3{color:#fff;font-size:15.5px;margin-bottom:4px}.gbf-benefits p{color:#c5b7a8;font-size:14px;line-height:1.55}
+    .gbf-offer{max-width:1000px;margin:0 auto;background:#241b15;border:1px solid #40332a;border-left:4px solid #e3a01f;border-radius:17px;padding:29px 30px}
+    .gbf-offer-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:35px;align-items:start}
+    .gbf-price small{display:block;color:#b6a694;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .gbf-price strong{display:block;color:#fff;font-size:56px;line-height:1;margin:8px 0;font-family:'DM Sans',system-ui,sans-serif;letter-spacing:-.06em}
+    .gbf-price span{color:#e3a01f;font-weight:800;font-size:14px}
+    .gbf-offer h3{color:#fff;font-size:22px;margin-bottom:10px}.gbf-offer p{color:#e7dccd;font-size:14.5px;line-height:1.6}
+    .gbf-includes{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 18px;margin:19px 0 0;padding:0;list-style:none}
+    .gbf-includes li{display:flex;gap:8px;color:#d8ccbd;font-size:12.5px;line-height:1.45}
+    .gbf-includes li::before{content:'\2713';color:#e3a01f;font-weight:900}
+    .gbf-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:21px}
+    .gbf-btn-primary,.gbf-btn-ghost{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:13px 19px;text-decoration:none;font-size:14px;font-weight:800}
+    .gbf-btn-primary{background:#e3a01f;color:#1f1b16}.gbf-btn-ghost{border:1px solid #6d6052;color:#f4ece0}
+    .gbf-terms{max-width:1000px;margin:17px auto 0;color:#b1a18f;font-size:12px;line-height:1.55}
+    .gbf-disclosure{max-width:1000px;margin:22px auto 0;padding-top:20px;border-top:1px solid #3a2e27;color:#978978;font-size:11.5px;line-height:1.65}
+
+    @media (max-width:1040px){
+      .hero-grid{grid-template-columns:1fr;gap:48px}.service-map{max-width:650px;width:100%;margin:auto;min-height:470px}.pathway-grid{grid-template-columns:1fr 1fr}.pathway:last-child{grid-column:1/-1;min-height:280px}.capability-grid{grid-template-columns:1fr;gap:41px}.capability-intro{position:static}.surface-grid,.specialty-wrap,.story-grid,.contact-grid{grid-template-columns:1fr}.surface-board{max-width:680px;width:100%;margin:auto}.story-art{max-width:600px;width:100%}.community-card{grid-template-columns:.45fr 1.55fr}.why-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:840px){
+      .desktop-nav,.header-call{display:none}.mobile-menu{display:block}.header-inner{min-height:68px}.trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}.trust-item:first-child{padding-left:24px}.people{grid-template-columns:1fr}.community-card{grid-template-columns:1fr;padding:38px}.community-symbol{width:130px;height:130px}.gbf-offer-grid{grid-template-columns:1fr}.gbf-benefits{grid-template-columns:1fr}.footer-top{flex-direction:column}
+    }
+    @media (max-width:620px){
+      html{scroll-padding-top:128px}.container{padding:0 18px}.concept-banner{font-size:11.5px;padding:7px 12px}.brand-mark{width:37px;height:37px}.brand-copy strong{font-size:18px}.brand-copy small{font-size:7.5px}.hero{padding:59px 0 64px}.hero h1{font-size:clamp(43px,13vw,62px)}.hero-lede{font-size:16.5px}.hero-actions .btn{width:100%}.hero-meta{display:grid;gap:8px}.service-map{min-height:410px;border-radius:21px;padding:17px}.map-top{font-size:8px}.map-core{width:135px;height:135px}.core-copy strong{font-size:37px}.core-copy span{font-size:7px;margin-top:10px}.map-chip{width:130px;padding:11px}.map-chip strong{font-size:11px}.map-chip span{font-size:8.5px}.chip-one{left:15px;top:74px}.chip-two{right:15px;top:143px}.chip-three{left:20px;bottom:34px}.map-spark{right:27px;bottom:47px;width:28px}.map-note{right:14px;bottom:13px;font-size:7px}.trust-grid{grid-template-columns:1fr}.trust-item,.trust-item:first-child{padding:17px 0;border-right:0;border-bottom:1px solid var(--line)}.trust-item:last-child{border-bottom:0}.section{padding:67px 0}.section-head{margin-bottom:31px}.section-head h2{font-size:clamp(36px,11vw,49px)}.section-head p{font-size:15.5px}.pathway-grid{grid-template-columns:1fr;gap:13px}.pathway,.pathway:last-child{grid-column:auto;min-height:290px;padding:24px 21px}.capability-intro h2{font-size:43px}.capability-card{grid-template-columns:42px 1fr;padding:17px;gap:12px}.capability-card .num{width:36px;height:36px}.surface-grid{gap:35px}.surface-board{grid-template-columns:1fr;transform:none}.surface-label{grid-column:auto}.surface-tile{min-height:145px}.specialty-wrap{gap:24px}.specialty-card{padding:19px}.scope-note{padding:24px}.story-grid{gap:34px}.story-art{min-height:330px}.story-monogram{width:145px;height:145px;font-size:50px}.community-card{padding:29px 22px}.community-symbol{display:none}.why-grid{grid-template-columns:1fr}.why-card{min-height:0}.contact-section{padding:68px 0}.contact-copy h2{font-size:45px}.contact-panel{padding:20px}.footer-links{gap:7px 15px}.mobile-call{position:fixed;z-index:990;left:12px;right:12px;bottom:12px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--orange);color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:99px;padding:13px 18px;text-decoration:none;font-size:14px;font-weight:800;box-shadow:0 11px 28px rgba(6,27,34,.28)}.mobile-call svg{width:16px;height:16px}.site-footer{padding-bottom:82px}.gbf-zone{padding:42px 0 47px}.gbf-offer{padding:24px 20px}.gbf-includes{grid-template-columns:1fr}.gbf-actions{flex-direction:column}.gbf-btn-primary,.gbf-btn-ghost{width:100%;text-align:center}.gbf-disclosure{font-size:10.8px}
+    }
+    @media (max-width:620px){.brand-copy small,.map-top,.core-copy span,.map-chip span,.map-note{font-size:9px}.mobile-call.is-past-concept{display:none}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.pathway a::after{transition:none}}
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="concept-banner"><strong>Private website concept</strong> &mdash; not Declare It Clean's official website &middot; prepared by <span>gobee<b>found</b></span></div>
+
+  <header class="site-header" aria-label="Declare It Clean concept header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Declare It Clean home">
+        <span class="brand-mark" aria-hidden="true">DIC</span>
+        <span class="brand-copy"><strong>Declare It Clean</strong><small>Family-owned cleaning</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a><a href="#commercial">Commercial</a><a href="#specialty">Specialty</a><a href="#about">About</a><a href="#community">Community</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="header-call" href="tel:+13032637449" aria-label="Call Declare It Clean at 303-263-7449">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L9 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1z"/></svg>
+        Call for an estimate
+      </a>
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav class="mobile-links" aria-label="Mobile navigation"><a href="#services">Services</a><a href="#commercial">Commercial</a><a href="#residential">Residential</a><a href="#specialty">Specialty</a><a href="#about">About</a><a href="#community">Community</a><a href="#contact">Contact</a><a href="tel:+13032637449">Call 303-263-7449</a></nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Aurora &amp; surrounding areas</span>
+          <h1 id="hero-title">One cleaning team.<br><span>More ways to help.</span></h1>
+          <p class="hero-lede">Commercial janitorial, residential surface care, and specialty cleaning &mdash; organized around what your home, business, or facility needs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-orange" href="tel:+13032637449">Call 303-263-7449 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <a class="btn btn-outline" href="mailto:declareitclean@gmail.com">Email Declare It Clean</a>
+          </div>
+          <div class="hero-meta">
+            <span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 6 7 .9-5 4.8 1.3 6.8L12 17.3l-6.3 3.2L7 13.7 2 8.9 9 8z"/></svg>Family-owned</span>
+            <span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V7l6-4 6 4v14M9 10h6M9 14h6"/></svg>Commercial &amp; residential</span>
+            <span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Free estimates offered</span>
+          </div>
+        </div>
+
+        <div class="service-map" aria-label="Illustrative map of Declare It Clean service categories">
+          <div class="map-top"><span>Service overview</span><b>Declare it handled</b></div>
+          <div class="map-core"><div class="core-copy"><strong>DIC</strong><span>One local team</span></div></div>
+          <div class="map-chip chip-one"><strong>Commercial</strong><span>Janitorial, offices, facilities &amp; floor care</span></div>
+          <div class="map-chip chip-two"><strong>Residential</strong><span>Carpet, upholstery, tile, windows &amp; more</span></div>
+          <div class="map-chip chip-three"><strong>Specialty</strong><span>Water, mold-related &amp; disinfecting services</span></div>
+          <svg class="map-spark" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor"><path d="M20 0c1.6 12.2 7.8 18.4 20 20-12.2 1.6-18.4 7.8-20 20C18.4 27.8 12.2 21.6 0 20 12.2 18.4 18.4 12.2 20 0Z"/></svg>
+          <span class="map-note">Illustrative concept graphic</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Company highlights">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8h14v13M8 12h2m4 0h2M8 16h2m4 0h2M8 8V4h8v4"/></svg></span><div><strong>Business facilities</strong><span>Recurring and detailed cleaning</span></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 11 9-8 9 8M5 10v11h14V10M9 21v-7h6v7"/></svg></span><div><strong>Homes &amp; interiors</strong><span>Room-to-room surface care</span></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></span><div><strong>Medical offices</strong><span>Scope discussed by estimate</span></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-4 7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 3 8 7 12Z"/><circle cx="12" cy="10" r="2"/></svg></span><div><strong>Local service</strong><span>Aurora and surrounding areas</span></div></div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Start with your space</span>
+          <h2 id="services-title">A broad service list, made simple.</h2>
+          <p>Choose the area that fits your need. Declare It Clean can discuss the space, the service, and the right next step during a free estimate.</p>
+        </div>
+        <div class="pathway-grid">
+          <article class="pathway" data-number="1">
+            <span class="pathway-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8h14v13M8 12h2m4 0h2M8 16h2m4 0h2M8 8V4h8v4"/></svg></span>
+            <h3>Commercial &amp; facility cleaning</h3>
+            <p>Janitorial work for offices, retail spaces, coffee shops, daycares, gyms, medical offices, and other commercial environments.</p>
+            <a href="#commercial">Explore commercial services</a>
+          </article>
+          <article class="pathway" data-number="2">
+            <span class="pathway-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 11 9-8 9 8M5 10v11h14V10M9 21v-7h6v7"/></svg></span>
+            <h3>Residential &amp; surface care</h3>
+            <p>Carpet, upholstery, tile and grout, rugs, mattresses, windows, move-in and move-out cleaning, and other detailed home services.</p>
+            <a href="#residential">Explore residential services</a>
+          </article>
+          <article class="pathway" data-number="3">
+            <span class="pathway-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4"/></svg></span>
+            <h3>Specialty &amp; response services</h3>
+            <p>Water extraction and water-damage work, mold-related services and repairs, plus electrostatic disinfecting and fogging.</p>
+            <a href="#specialty">Review specialty services</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-deep" id="commercial" aria-labelledby="commercial-title">
+      <div class="container capability-grid">
+        <div class="capability-intro">
+          <span class="kicker">Commercial capability</span>
+          <h2 id="commercial-title">Cleaning support that fits the facility.</h2>
+          <p>From ongoing janitorial needs to detailed floor and surface work, the service can be discussed around the building, schedule, and priorities.</p>
+          <a class="btn btn-orange" href="tel:+13032637449">Discuss your facility</a>
+        </div>
+        <div class="capability-list">
+          <article class="capability-card"><span class="num">01</span><div><h3>Recurring janitorial cleaning</h3><p>Routine cleaning for offices and other commercial buildings, with the schedule and scope set for the space.</p></div></article>
+          <article class="capability-card"><span class="num">02</span><div><h3>Offices, retail, coffee shops &amp; daycares</h3><p>The current service list includes offices of different sizes, retail environments, coffee shops, daycares, and more.</p></div></article>
+          <article class="capability-card"><span class="num">03</span><div><h3>Gyms &amp; floor care</h3><p>Gym floors, carpet, tile and grout, grout sealing, natural stone, cement cleaning, and strip-and-wax work are listed services.</p></div></article>
+          <article class="capability-card"><span class="num">04</span><div><h3>Medical &amp; clinical offices</h3><p>Declare It Clean's public site identifies medical-office cleaning as a specialty. Exact scope and facility requirements can be confirmed during the estimate.</p></div></article>
+          <article class="capability-card"><span class="num">05</span><div><h3>Detail and transition cleaning</h3><p>Window cleaning, move-in and move-out work, upholstery, carpet, and other detailed services can support facility transitions or one-time needs.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-teal" id="residential" aria-labelledby="residential-title">
+      <div class="container surface-grid">
+        <div class="surface-copy">
+          <div class="section-head">
+            <span class="kicker">Residential &amp; surface care</span>
+            <h2 id="residential-title">One call for the surfaces throughout your home.</h2>
+            <p>Instead of hunting through separate pages, homeowners can see the range of detailed cleaning options in one place.</p>
+          </div>
+          <div class="service-tags" aria-label="Residential cleaning services">
+            <span>Carpet cleaning</span><span>Upholstery</span><span>Tile &amp; grout</span><span>Grout sealing</span><span>Mattresses</span><span>Oriental rugs</span><span>Pet treatments</span><span>Move-in / move-out</span><span>Windows</span><span>Showers</span><span>Cement</span><span>Natural stone</span><span>Air-duct cleaning</span>
+          </div>
+        </div>
+        <div class="surface-board" aria-label="Illustrative cleaning surface samples">
+          <div class="surface-tile"><strong>Carpet &amp; rugs</strong></div>
+          <div class="surface-tile"><strong>Tile &amp; grout</strong></div>
+          <div class="surface-tile"><strong>Upholstery</strong></div>
+          <div class="surface-tile"><strong>Detailed cleaning</strong></div>
+          <div class="surface-label">Illustrative concept textures &mdash; not customer project photos</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="specialty" aria-labelledby="specialty-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Specialty services</span>
+          <h2 id="specialty-title">When the need goes beyond routine cleaning.</h2>
+          <p>The current site also describes water, mold-related, repair, and disinfecting services. This concept keeps those services visible while avoiding unsupported health or outcome claims.</p>
+        </div>
+        <div class="specialty-wrap">
+          <div class="specialty-cards">
+            <article class="specialty-card"><h3>Water extraction &amp; water-damage work</h3><p>Emergency water damage and water extraction appear in the company's public service information. Call to explain the situation and confirm availability and scope.</p></article>
+            <article class="specialty-card"><h3>Mold-related services &amp; damage repair</h3><p>The current site describes inspection, moisture and humidity checks, mold removal, and repair of affected materials. Exact assessment, remediation, and repair scope should be confirmed directly.</p></article>
+            <article class="specialty-card"><h3>Electrostatic disinfecting &amp; fogging</h3><p>Electrostatic application and disinfecting/fogging are listed for residential and commercial environments. Product selection, use case, and service details can be discussed before work begins.</p></article>
+          </div>
+          <aside class="scope-note" aria-label="Questions to confirm for specialty services">
+            <span class="kicker">Start with an assessment</span>
+            <h3>Clear scope matters.</h3>
+            <p>Specialty work can vary by property and condition. A direct conversation helps define what is needed before any work is scheduled.</p>
+            <ul><li>Describe the affected space or facility</li><li>Ask which services are appropriate and available</li><li>Confirm the proposed scope and next steps</li><li>Request any credentials or documentation your property requires</li></ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container story-grid">
+        <div class="story-art" aria-label="Illustrative Declare It Clean family-business monogram"><span class="story-monogram">DIC</span><span class="story-art-note">Illustrative concept graphic &mdash; final site would use owner-approved photography</span></div>
+        <div class="story-copy">
+          <div class="section-head">
+            <span class="kicker">The people behind the work</span>
+            <h2 id="about-title">A family business built from hands-on experience.</h2>
+          </div>
+          <p>Declare It Clean's public story introduces the Avina family as the team behind the business. Felipe's bio describes years working as a senior trainer for a large Colorado commercial janitorial service before starting the company.</p>
+          <p>Maria's public bio centers on customer service, business training at Community College of Aurora, and a straightforward principle: treat customers the way she would want to be treated.</p>
+          <p>The current service page also describes more than 20 years of professional experience across homes and commercial environments.</p>
+          <div class="people">
+            <div class="person"><strong>Maria Avina</strong><span>Owner &amp; business administrator</span></div>
+            <div class="person"><strong>Felipe Avina</strong><span>Sales &amp; professional technician</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="community" aria-labelledby="community-title">
+      <div class="container">
+        <div class="community-card">
+          <div class="community-symbol"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-8-4.6-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.4-8 11-8 11Z"/><path d="M8 12h8M12 8v8"/></svg></div>
+          <div class="community-copy">
+            <span class="kicker">Rooted in Aurora</span>
+            <h2 id="community-title">Service that extends into the community.</h2>
+            <p>The family's public community page says they volunteer weekly with Friends of Saint Andrew, an Aurora outreach ministry that provides meals and other practical support for people in need.</p>
+            <a href="https://declareitclean.com/community/" rel="noopener">Read the current community page &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-teal" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Why Declare It Clean</span>
+          <h2 id="why-title">Broad capability. A local point of contact.</h2>
+          <p>The business's depth becomes easier to understand when each service has a clear place and every path leads to a direct conversation.</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card"><div class="line"></div><h3>Family-owned</h3><p>The Avina family is personally connected to the business story and day-to-day customer experience.</p></article>
+          <article class="why-card"><div class="line"></div><h3>Commercial depth</h3><p>Janitorial, facility, medical-office, and detailed floor-care needs sit under one organized capability.</p></article>
+          <article class="why-card"><div class="line"></div><h3>Home surface care</h3><p>Carpet, upholstery, tile, rugs, windows, and more can be discussed through a single local company.</p></article>
+          <article class="why-card"><div class="line"></div><h3>Direct estimates</h3><p>Call or email the business directly to explain the space, confirm service availability, and request an estimate.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="kicker">Talk through the job</span>
+          <h2 id="contact-title">What can Declare It Clean help with?</h2>
+          <p>Serving Aurora and surrounding areas. Contact the business directly to describe the property, confirm the service area for your address, and request a free estimate.</p>
+        </div>
+        <div class="contact-panel">
+          <h3>Contact Declare It Clean</h3>
+          <a class="contact-link" href="tel:+13032637449"><span class="icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L9 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1z"/></svg></span><span><small>Call today</small><strong>303-263-7449</strong></span></a>
+          <a class="contact-link" href="mailto:declareitclean@gmail.com"><span class="icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><strong>declareitclean@gmail.com</strong></span></a>
+          <p class="contact-fine">Direct contact links only. This concept page does not collect or route customer inquiries.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top"><div><div class="footer-brand">Declare It <span>Clean</span></div><p>Commercial janitorial, residential surface care, and specialty cleaning for Aurora and surrounding areas.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="#services">Services</a><a href="#commercial">Commercial</a><a href="#residential">Residential</a><a href="#specialty">Specialty</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div>
+      <div class="footer-bottom"><span>&copy; 2026 Declare It Clean</span><span>Layout concept only. Not the company's official website.</span></div>
+    </div>
+  </footer>
+
+  <a class="mobile-call" href="tel:+13032637449"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L9 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1z"/></svg>Call Declare It Clean</a>
+
+  <div class="gbf-divider"><div class="container"><span class="tag">End of the website concept</span><p>Everything above is the proposed Declare It Clean website. Everything below is from GoBeeFound.</p></div></div>
+
+  <section class="gbf-zone" aria-labelledby="gbf-title">
+    <div class="container">
+      <div class="gbf-why">
+        <span class="gbf-label">Why this direction</span>
+        <h2 id="gbf-title">Building on the depth Declare It Clean already has.</h2>
+        <p class="gbf-intro">The business already communicates a wide range of useful services and a real family and community story. This concept organizes that information so customers can understand it quickly without making the company feel smaller.</p>
+        <ul class="gbf-benefits">
+          <li><span class="num">1</span><div><h3>Service categories are clear</h3><p>Commercial, residential, and specialty work each have a distinct place.</p></div></li>
+          <li><span class="num">2</span><div><h3>The mobile path is immediate</h3><p>Tap-friendly navigation and direct call actions keep the next step close.</p></div></li>
+          <li><span class="num">3</span><div><h3>Commercial depth is visible</h3><p>Facilities, floor care, and medical-office cleaning no longer get buried.</p></div></li>
+          <li><span class="num">4</span><div><h3>The family story builds context</h3><p>Maria, Felipe, and the company's community involvement feel integral.</p></div></li>
+          <li><span class="num">5</span><div><h3>Repeated copy is consolidated</h3><p>The useful facts stay while dated or risky wording is kept out.</p></div></li>
+          <li><span class="num">6</span><div><h3>The foundation is easier to read</h3><p>Semantic sections, service detail, local context, and contact paths create a cleaner search-friendly foundation without promising rankings.</p></div></li>
+        </ul>
+      </div>
+
+      <div class="gbf-offer">
+        <div class="gbf-offer-grid">
+          <div class="gbf-price"><small>Founding-client rate</small><strong>$450</strong><span>One-time website build</span></div>
+          <div>
+            <h3>Like this direction for Declare It Clean?</h3>
+            <p>GoBeeFound can customize the finished site with owner-approved wording and real photographs, connect it to a domain Declare It Clean owns, and launch it with the business's online foundation organized clearly.</p>
+            <ul class="gbf-includes"><li>Professional mobile-friendly website</li><li>Accurate owner-approved business information</li><li>Services, service area &amp; contact paths</li><li>Search-friendly foundational structure</li><li>Domain connection without taking ownership</li><li>One consolidated revision round</li><li>Launch and first year of managed hosting</li><li>One-time Google Business Profile review &amp; cleanup</li></ul>
+            <div class="gbf-actions"><a class="gbf-btn-primary" href="https://gobeefound.com/#contact">Ask AJ about this concept</a><a class="gbf-btn-ghost" href="tel:+17207671898">Call or text AJ &middot; (720) 767-1898</a></div>
+          </div>
+        </div>
+      </div>
+      <p class="gbf-terms">No required monthly marketing contract. The Google Business Profile work is a one-time review and cleanup of foundational profile information to help align it with the finished website; it is not an ongoing SEO campaign. Rankings, calls, leads, and revenue are not guaranteed. Declare It Clean keeps ownership of its domain.</p>
+      <p class="gbf-disclosure">This private concept was prepared by GoBeeFound for Declare It Clean using publicly available information. It is not affiliated with, endorsed by, authorized by, representing, or the official website of Declare It Clean, and it does not collect customer inquiries. All visual assets on this page are original illustrative concept graphics, not actual Declare It Clean employees, customer properties, or completed projects. Some wording and factual details require owner confirmation before production. If you are the business owner and would like this concept changed or removed, contact AJ Rhea at (720) 767-1898 or contact@gobeefound.com.</p>
+    </div>
+  </section>
+
+  <script>
+    (function(){
+      var banner=document.querySelector('.concept-banner');
+      var menu=document.querySelector('.mobile-menu');
+      var mobileCall=document.querySelector('.mobile-call');
+      var conceptEnd=document.querySelector('.gbf-divider');
+      function syncBanner(){if(banner){document.documentElement.style.setProperty('--banner-height',banner.offsetHeight+'px')}}
+      function syncMobileCall(){if(mobileCall&&conceptEnd){mobileCall.classList.toggle('is-past-concept',window.scrollY+window.innerHeight>=conceptEnd.offsetTop)}}
+      syncBanner();
+      syncMobileCall();
+      window.addEventListener('load',syncBanner);
+      window.addEventListener('load',syncMobileCall);
+      window.addEventListener('resize',syncBanner);
+      window.addEventListener('resize',syncMobileCall);
+      window.addEventListener('orientationchange',syncBanner);
+      window.addEventListener('orientationchange',syncMobileCall);
+      window.addEventListener('scroll',syncMobileCall,{passive:true});
+      if(menu){menu.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){menu.removeAttribute('open')})})}
+    })();
+  </script>
+</body>
+</html>
