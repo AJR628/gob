@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>HomeTown Helper HVAC | Aurora Home Comfort (Private Concept)</title>
+  <meta name="description" content="Private website concept for HomeTown Helper HVAC in Aurora, Colorado. Heating, cooling, hydronics, heat pumps, maintenance, air quality, and ventilation.">
+  <meta name="theme-color" content="#092333">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HomeTown Helper HVAC | Home comfort, handled with clarity">
+  <meta property="og:description" content="A private website concept for an Aurora-based, licensed and insured HVAC professional.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#092333;
+      --navy-deep:#061821;
+      --blue:#14516a;
+      --ice:#d9eef3;
+      --cyan:#58c9dc;
+      --copper:#d4693b;
+      --copper-dark:#ad4b29;
+      --cream:#f5f1e9;
+      --paper:#fbfaf6;
+      --steel:#78909a;
+      --ink:#14232a;
+      --muted:#61727a;
+      --line:rgba(20,35,42,.15);
+      --sans:'Archivo',Arial,sans-serif;
+      --serif:'DM Serif Display',Georgia,serif;
+      --shadow:0 24px 70px rgba(6,24,33,.16);
+      --radius:22px;
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:110px;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;overflow-wrap:break-word}
+    body.menu-open{overflow:hidden}
+    img{display:block;width:100%;max-width:100%}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.04;letter-spacing:-.035em}
+    a{color:inherit}
+    button{font:inherit}
+    .wrap{width:min(1220px,calc(100% - 64px));margin-inline:auto}
+    .section{padding:112px 0}
+    .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:20px;color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.19em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:28px;height:2px;background:var(--copper)}
+    .section-title{font-family:var(--serif);font-size:clamp(42px,5.2vw,72px);font-weight:400}
+    .lede{font-size:clamp(18px,2vw,22px);line-height:1.55;color:var(--muted)}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}
+    .skip{position:fixed;left:16px;top:-80px;z-index:10000;background:#fff;color:var(--navy);padding:12px 18px;border-radius:0 0 8px 8px;font-weight:700;text-decoration:none}
+    .skip:focus{top:0}
+
+    .concept-note{position:relative;z-index:950;background:#051218;color:#b9cad0;text-align:center;padding:8px 20px;font-size:11px;line-height:1.45;border-bottom:1px solid rgba(255,255,255,.1)}
+    .concept-note strong{color:#fff}
+    .site-header{position:absolute;z-index:900;top:34px;left:0;right:0;color:#fff}
+    .site-header .wrap{height:88px;display:flex;align-items:center;justify-content:space-between;gap:30px;border-bottom:1px solid rgba(255,255,255,.23)}
+    .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .brand-mark{position:relative;width:46px;height:46px;flex:none;border-radius:12px;background:var(--copper);display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+    .brand-mark::after{content:"";position:absolute;inset:6px;border:1px solid rgba(255,255,255,.35);border-radius:8px}
+    .brand-mark svg{position:relative;z-index:1;width:27px;height:27px}
+    .brand-copy{display:flex;flex-direction:column;line-height:1}
+    .brand-name{font-size:21px;font-weight:800;letter-spacing:-.035em}
+    .brand-sub{margin-top:7px;color:rgba(255,255,255,.7);font-size:8px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+    .nav{display:flex;align-items:center;gap:26px}
+    .nav a{padding:14px 0;color:rgba(255,255,255,.82);font-size:12px;font-weight:700;text-decoration:none}
+    .nav a:hover{color:#fff}
+    .nav-book{display:inline-flex!important;align-items:center;gap:8px;padding:11px 17px!important;border:1px solid rgba(255,255,255,.45);border-radius:9px;color:#fff!important;background:rgba(6,24,33,.2)}
+    .nav-book svg{width:15px;height:15px}
+    .menu-toggle{display:none;width:46px;height:46px;border:1px solid rgba(255,255,255,.4);border-radius:10px;color:#fff;background:rgba(6,24,33,.34);align-items:center;justify-content:center;cursor:pointer}
+    .menu-toggle svg{width:22px;height:22px}
+
+    .hero{position:relative;min-height:790px;height:min(930px,100vh);display:flex;align-items:flex-end;color:#fff;background:var(--navy-deep);overflow:hidden}
+    .hero-media{position:absolute;inset:0}
+    .hero-media img{height:100%;object-fit:cover;object-position:center 48%}
+    .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,18,24,.94) 0%,rgba(5,18,24,.73) 39%,rgba(5,18,24,.23) 72%),linear-gradient(0deg,rgba(5,18,24,.8),transparent 51%)}
+    .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 300px;gap:70px;align-items:end;padding:190px 0 68px}
+    .hero-copy{max-width:810px}
+    .hero .eyebrow{color:#a8dae4}
+    .hero h1{font-family:var(--serif);font-size:clamp(58px,7vw,100px);font-weight:400;max-width:9em}
+    .hero h1 em{color:#9bddE8;font-weight:400}
+    .hero-lede{max-width:620px;margin-top:24px;color:rgba(255,255,255,.76);font-size:clamp(18px,2vw,22px)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:54px;padding:14px 23px;border:1px solid transparent;border-radius:9px;font-size:13px;font-weight:800;text-decoration:none;transition:.2s ease}
+    .btn svg{width:17px;height:17px}
+    .btn-primary{background:var(--copper);color:#fff}
+    .btn-primary:hover{background:#e27848;transform:translateY(-2px)}
+    .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.05)}
+    .btn-ghost:hover{background:rgba(255,255,255,.12)}
+    .hero-card{border:1px solid rgba(255,255,255,.2);background:rgba(6,24,33,.58);backdrop-filter:blur(14px);border-radius:18px;padding:25px}
+    .hero-card .status{display:flex;align-items:center;gap:9px;color:#bce4eb;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .status-dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px rgba(88,201,220,.13)}
+    .hero-card strong{display:block;margin-top:23px;font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.1}
+    .hero-card p{margin-top:12px;color:rgba(255,255,255,.63);font-size:12px}
+    .hero-card a{display:block;margin-top:20px;color:#fff;font-size:12px;font-weight:800;text-underline-offset:5px}
+    .image-note{position:absolute;z-index:3;right:18px;bottom:15px;padding:6px 9px;border-radius:999px;background:rgba(5,18,24,.66);color:rgba(255,255,255,.72);font-size:9px;backdrop-filter:blur(8px)}
+
+    .trust{background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+    .trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+    .trust-item{position:relative;padding:30px 34px;border-right:1px solid rgba(255,255,255,.13)}
+    .trust-item:first-child{padding-left:0}
+    .trust-item:last-child{border-right:0;padding-right:0}
+    .trust-item strong{display:block;font-family:var(--serif);font-size:27px;font-weight:400}
+    .trust-item span{display:block;margin-top:7px;color:#9bb0b8;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+
+    .intro{background:var(--paper);overflow:hidden}
+    .intro-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:100px;align-items:center}
+    .intro-copy .lede{max-width:690px;margin-top:28px}
+    .diagnostic-card{position:relative;min-height:360px;padding:42px;border-radius:var(--radius);background:var(--ice);overflow:hidden}
+    .diagnostic-card::before,.diagnostic-card::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(20,81,106,.22)}
+    .diagnostic-card::before{width:340px;height:340px;right:-120px;top:-125px;box-shadow:0 0 0 38px rgba(20,81,106,.055),0 0 0 76px rgba(20,81,106,.035)}
+    .diagnostic-card::after{width:13px;height:13px;right:71px;top:72px;background:var(--copper);border:0;box-shadow:0 0 0 8px rgba(212,105,59,.14)}
+    .diagnostic-card small{position:relative;color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    .diagnostic-card strong{position:relative;display:block;max-width:9em;margin-top:65px;font-family:var(--serif);font-size:40px;font-weight:400;line-height:1.08}
+    .diagnostic-card p{position:relative;max-width:330px;margin-top:18px;color:#506a74;font-size:13px}
+
+    .services{background:#e8eff0}
+    .services-head{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:end;margin-bottom:58px}
+    .services-head .lede{max-width:500px}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service-card{position:relative;min-height:470px;padding:34px;border:1px solid rgba(20,35,42,.12);border-radius:var(--radius);background:var(--paper);display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(255,255,255,.7)}
+    .service-card.featured{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .service-icon{width:49px;height:49px;border-radius:12px;background:var(--ice);color:var(--blue);display:grid;place-items:center}
+    .featured .service-icon{background:rgba(88,201,220,.12);color:var(--cyan)}
+    .service-icon svg{width:25px;height:25px}
+    .service-card .num{position:absolute;right:28px;top:26px;color:#9aa9ae;font-family:var(--serif);font-size:18px;font-style:italic}
+    .service-card h3{margin-top:46px;font-family:var(--serif);font-size:38px;font-weight:400}
+    .service-card>p{margin-top:16px;color:var(--muted);font-size:14px}
+    .featured>p{color:#aebdc3}
+    .service-list{display:grid;gap:9px;margin:28px 0 0;padding:24px 0 0;border-top:1px solid var(--line);list-style:none}
+    .featured .service-list{border-color:rgba(255,255,255,.13)}
+    .service-list li{display:flex;align-items:flex-start;gap:9px;color:#44565d;font-size:12px;font-weight:600}
+    .featured .service-list li{color:#d0dade}
+    .service-list li::before{content:"";width:5px;height:5px;flex:none;margin-top:7px;border-radius:50%;background:var(--copper)}
+
+    .systems{background:var(--navy-deep);color:#fff}
+    .systems-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:700px}
+    .systems-media{position:relative;overflow:hidden}
+    .systems-media img{height:100%;object-fit:cover}
+    .systems-media::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,24,33,.35),transparent 55%)}
+    .systems-copy{display:flex;align-items:center;padding:80px clamp(45px,7vw,110px)}
+    .systems-copy-inner{max-width:520px}
+    .systems .eyebrow{color:#9ddbe5}
+    .systems h2{font-family:var(--serif);font-size:clamp(43px,5vw,69px);font-weight:400}
+    .systems .lede{margin-top:25px;color:#aabcc3}
+    .systems-points{display:grid;gap:0;margin-top:32px;border-top:1px solid rgba(255,255,255,.15)}
+    .systems-point{display:grid;grid-template-columns:36px 1fr;gap:13px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+    .systems-point span:first-child{color:var(--cyan);font-family:var(--serif);font-size:18px;font-style:italic}
+    .systems-point span:last-child{color:#d6e0e3;font-size:13px;font-weight:600}
+
+    .care{background:var(--cream)}
+    .care-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}
+    .care-media{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .care-media img{aspect-ratio:4/3;object-fit:cover}
+    .care-copy .lede{margin-top:25px}
+    .care-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:32px}
+    .care-fact{padding:18px;border-left:3px solid var(--copper);background:rgba(255,255,255,.64)}
+    .care-fact strong{display:block;font-size:13px}
+    .care-fact span{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.45}
+
+    .process{background:var(--paper)}
+    .process-head{display:grid;grid-template-columns:1fr .7fr;gap:70px;align-items:end;margin-bottom:60px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+    .step{position:relative;padding:34px 30px 0 0}
+    .step::before{content:"";position:absolute;top:-5px;left:0;width:10px;height:10px;background:var(--copper);border-radius:50%}
+    .step-num{font-family:var(--serif);font-size:18px;color:var(--blue);font-style:italic}
+    .step h3{margin-top:26px;font-family:var(--serif);font-size:27px;font-weight:400}
+    .step p{max-width:230px;margin-top:12px;color:var(--muted);font-size:12px}
+
+    .about{background:var(--ice)}
+    .about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:100px;align-items:center}
+    .gauge{position:relative;aspect-ratio:1;max-width:390px;border-radius:50%;background:var(--navy);display:grid;place-items:center;color:#fff;text-align:center}
+    .gauge::before{content:"";position:absolute;inset:18px;border-radius:50%;border:1px solid rgba(255,255,255,.18);border-top-color:var(--cyan);border-right-color:var(--copper)}
+    .gauge::after{content:"";position:absolute;left:50%;bottom:50%;width:1px;height:31%;background:var(--copper);transform-origin:bottom;transform:rotate(40deg)}
+    .gauge-inner{position:relative;z-index:1;max-width:220px}
+    .gauge strong{display:block;font-family:var(--serif);font-size:58px;font-weight:400;line-height:.9}
+    .gauge span{display:block;margin-top:14px;color:#b2c5cc;font-size:9px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .about-copy .lede{margin-top:26px}
+    .about-note{margin-top:27px;padding:20px 23px;border-left:3px solid var(--copper);background:rgba(255,255,255,.58);color:#50656d;font-size:13px}
+
+    .licenses{background:var(--navy);color:#fff}
+    .license-head{display:grid;grid-template-columns:1fr .75fr;gap:70px;align-items:end;margin-bottom:52px}
+    .licenses .eyebrow{color:#9ddbe5}
+    .license-head p{color:#a9bbc2;font-size:14px}
+    .license-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(255,255,255,.15);border-left:1px solid rgba(255,255,255,.15)}
+    .license{padding:24px;border-right:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(255,255,255,.15)}
+    .license strong{display:block;font-family:var(--serif);font-size:25px;font-weight:400}
+    .license span{display:block;margin-top:7px;color:#b0c1c7;font-size:11px;line-height:1.6}
+    .license-note{max-width:900px;margin-top:24px;color:#8199a2;font-size:10px;line-height:1.65}
+
+    .areas{background:var(--cream)}
+    .areas-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}
+    .areas-copy .lede{margin-top:24px}
+    .area-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .area-list span{padding:21px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--serif);font-size:25px}
+
+    .final-cta{position:relative;background:var(--copper);color:#fff;padding:94px 0;overflow:hidden}
+    .final-cta::after{content:"";position:absolute;width:450px;height:450px;border:1px solid rgba(255,255,255,.2);border-radius:50%;right:-140px;top:-220px;box-shadow:0 0 0 50px rgba(255,255,255,.04),0 0 0 100px rgba(255,255,255,.025)}
+    .final-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:60px;align-items:center}
+    .final-grid h2{max-width:800px;font-family:var(--serif);font-size:clamp(48px,6vw,78px);font-weight:400}
+    .final-grid p{max-width:650px;margin-top:18px;color:rgba(255,255,255,.8);font-size:17px}
+    .final-actions{display:flex;flex-direction:column;gap:10px;min-width:245px}
+    .final-actions .btn{background:#fff;color:var(--navy)}
+    .final-actions .btn.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+
+    .business-footer{background:#05151d;color:#fff;padding:52px 0 34px}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:70px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.13)}
+    .footer-brand{max-width:410px}
+    .footer-brand p{margin-top:18px;color:#8298a1;font-size:12px}
+    .footer-columns{display:grid;grid-template-columns:repeat(2,190px);gap:34px}
+    .footer-columns h3{font-family:var(--sans);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#80d4e2}
+    .footer-columns a,.footer-columns span{display:block;margin-top:10px;color:#afbec4;font-size:12px;text-decoration:none}
+    .footer-columns a:hover{color:#fff}
+    .footer-legal{max-width:980px;padding-top:25px;color:#6f858e;font-size:10px;line-height:1.7}
+
+    .end-marker{background:#14100e;color:#fff;padding:23px 24px;text-align:center;border-top:5px solid #e2a321;border-bottom:1px solid rgba(255,255,255,.18)}
+    .end-marker strong{display:block;color:#f3c356;font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+    .end-marker span{font-size:11px;color:#bfb4a9}
+    .gbf{background:#191512;color:#f5eee5;font-family:var(--sans)}
+    .gbf-wrap{width:min(1040px,calc(100% - 64px));margin-inline:auto}
+    .gbf-intro{display:grid;grid-template-columns:.88fr 1.12fr;gap:100px;align-items:start;padding:94px 0 72px}
+    .gbf-mark{font-size:18px;font-weight:800;letter-spacing:-.02em}
+    .gbf-mark b{color:#e3a01f}
+    .gbf-overline{margin-top:28px;color:#e3a01f;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+    .gbf h2,.gbf h3{font-family:var(--serif);font-weight:400}
+    .gbf h2{font-size:clamp(42px,5vw,65px);line-height:1.02}
+    .gbf-intro-copy>p{max-width:580px;margin-top:24px;color:#c9beb2;font-size:16px}
+    .gbf-reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:34px}
+    .gbf-reason{padding:18px;border:1px solid #3b332c;border-radius:13px;background:#201b17}
+    .gbf-reason strong{display:block;color:#fff;font-size:13px}
+    .gbf-reason span{display:block;margin-top:5px;color:#aa9d90;font-size:11px;line-height:1.5}
+    .offer{display:grid;grid-template-columns:.72fr 1.28fr;gap:100px;padding:72px 0 90px;border-top:1px solid #38302a}
+    .price{color:#fff;font-family:var(--serif);font-size:92px;line-height:.9;letter-spacing:-.05em}
+    .price small{display:block;margin-top:22px;color:#e3a01f;font-family:var(--sans);font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+    .offer-copy h3{color:#fff;font-size:35px}
+    .offer-list{display:grid;grid-template-columns:repeat(2,1fr);gap:11px 24px;margin:27px 0;padding:0;list-style:none}
+    .offer-list li{display:flex;gap:9px;color:#c9beb2;font-size:12px}
+    .offer-list li::before{content:"✓";color:#e3a01f;font-weight:800}
+    .gbf-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .gbf-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:13px 20px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none}
+    .gbf-btn.primary{background:#e3a01f;color:#1d1814}
+    .gbf-btn.secondary{border:1px solid #665b50;color:#f5eee5}
+    .gbf-fine{margin-top:25px!important;color:#8f8378!important;font-size:10.5px!important;line-height:1.7}
+    .gbf-footer{display:flex;justify-content:space-between;gap:30px;padding:26px 0 35px;border-top:1px solid #38302a;color:#8f8378;font-size:10.5px}
+
+    .mobile-call{display:none;position:fixed;z-index:850;left:12px;right:12px;bottom:12px;min-height:54px;border-radius:9px;background:var(--copper);color:#fff;align-items:center;justify-content:center;gap:9px;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:13px;font-weight:800;text-decoration:none;transition:opacity .2s,transform .2s}
+    .mobile-call svg{width:17px;height:17px}
+    body.gbf-view .mobile-call,body.hero-view .mobile-call{opacity:0;pointer-events:none;transform:translateY(90px)}
+
+    @media (max-width:1000px){
+      .wrap,.gbf-wrap{width:min(100% - 40px,1220px)}
+      .nav{position:fixed;top:112px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:2px;padding:25px 20px 32px;background:var(--navy-deep);border-top:1px solid rgba(255,255,255,.13)}
+      body.menu-open .nav{display:flex}
+      .nav a{padding:11px 6px;font-family:var(--serif);font-size:27px;font-weight:400}
+      .nav-book{justify-content:center;margin-top:10px;font-family:var(--sans)!important;font-size:13px!important;font-weight:800!important}
+      .menu-toggle{display:inline-flex}
+      .hero-grid{grid-template-columns:1fr}.hero-card{display:none}
+      .intro-grid,.services-head,.care-grid,.process-head,.about-grid,.license-head,.areas-grid,.gbf-intro,.offer{grid-template-columns:1fr;gap:45px}
+      .service-grid{grid-template-columns:1fr}.service-card{min-height:0}
+      .service-card h3{margin-top:30px}
+      .systems-grid{grid-template-columns:1fr;min-height:0}.systems-media{min-height:570px}.systems-copy{padding:75px 45px}
+      .steps{grid-template-columns:repeat(2,1fr);gap:45px 22px}
+      .gauge{max-width:300px}
+      .final-grid{grid-template-columns:1fr;gap:35px}.final-actions{align-items:flex-start}
+      .footer-grid{grid-template-columns:1fr}
+    }
+
+    @media (max-width:700px){
+      html{scroll-padding-top:90px}
+      body{font-size:15px;padding-bottom:76px}
+      .concept-note{padding:7px 12px;font-size:9.5px}
+      .wrap,.gbf-wrap{width:min(100% - 30px,1220px)}
+      .section{padding:78px 0}
+      .site-header{top:29px}.site-header .wrap{height:70px}.brand-mark{width:39px;height:39px}.brand-name{font-size:18px}.brand-sub{font-size:6.9px}
+      .nav{top:99px;height:calc(100dvh - 99px);overflow:auto}
+      .hero{height:auto;min-height:735px}.hero-media img{object-position:62% center}.hero-media::after{background:linear-gradient(90deg,rgba(5,18,24,.89),rgba(5,18,24,.35)),linear-gradient(0deg,rgba(5,18,24,.9),rgba(5,18,24,.1) 65%)}
+      .hero-grid{padding:165px 0 45px}.hero h1{font-size:clamp(49px,14.5vw,67px);max-width:6.5em}.hero-lede{font-size:16px}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.hero .image-note{right:10px;bottom:8px;max-width:230px;text-align:right}
+      .trust-grid{grid-template-columns:1fr}.trust-item,.trust-item:first-child,.trust-item:last-child{padding:20px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}.trust-item:last-child{border-bottom:0}
+      .diagnostic-card{min-height:330px;padding:30px}.diagnostic-card strong{font-size:35px}
+      .service-card{padding:28px}.service-card h3{font-size:34px}
+      .systems-media{min-height:430px}.systems-copy{padding:60px 20px}
+      .care-facts{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr;gap:38px}
+      .gauge{margin:auto}.gauge strong{font-size:48px}
+      .license-grid{grid-template-columns:1fr}
+      .area-list{grid-template-columns:1fr}.area-list span{font-size:22px;padding:17px}
+      .final-cta{padding:72px 0}.final-actions{align-items:stretch}
+      .footer-columns{grid-template-columns:1fr 1fr}
+      .end-marker{padding:19px 12px}
+      .gbf-intro,.offer{padding-top:62px;padding-bottom:62px}.gbf-reasons,.offer-list{grid-template-columns:1fr}.price{font-size:78px}.gbf-actions{flex-direction:column}.gbf-footer{flex-direction:column;gap:10px}
+      .mobile-call{display:flex}
+    }
+
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.mobile-call{transition:none}}
+  </style>
+</head>
+<body class="hero-view">
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="concept-note"><strong>Private website concept:</strong> not HomeTown Helper HVAC's official site. Public information and illustrative visuals are used for review only.</div>
+
+  <header class="site-header" aria-label="Site header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="HomeTown Helper HVAC home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 5v22M5 16h22M8.2 8.2l15.6 15.6M23.8 8.2 8.2 23.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg></span>
+        <span class="brand-copy"><span class="brand-name">HomeTown Helper</span><span class="brand-sub">Heating · Cooling · Hydronics</span></span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a><a href="#process">How it works</a><a href="#about">About</a><a href="#licenses">Licensing</a><a href="#areas">Service area</a>
+        <a class="nav-book" href="https://book.housecallpro.com/book/HomeTown-Helper-LLC/2671dbac61f94b70a0daf1c25b0fd84a?v2=true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3v3m10-3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v12H4V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Book online</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <figure class="hero-media"><img src="assets/hometown-hero.webp" width="1586" height="992" alt="Illustrative Aurora-area home at blue hour with a modern outdoor heat pump and HVAC technician" fetchpriority="high"></figure>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Aurora-based · Licensed &amp; insured</p>
+          <h1 id="hero-title">Home comfort, handled with <em>clarity.</em></h1>
+          <p class="hero-lede">Heating, cooling, hydronic systems, maintenance, and air-quality help from a local professional with a decade and counting of industry experience.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+17208912728"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8.4 3.8 6.2 4.9c-1 .5-1.5 1.6-1.2 2.7 1.6 5.6 5.9 9.9 11.5 11.5 1.1.3 2.2-.2 2.7-1.2l1.1-2.2-4.1-2-1 1.4c-.3.4-.8.5-1.2.3a13.6 13.6 0 0 1-5.3-5.3c-.2-.4-.1-.9.3-1.2l1.4-1-2-4.1Z" stroke="currentColor" stroke-width="1.7"/></svg>Call (720) 891-2728</a>
+            <a class="btn btn-ghost" href="https://book.housecallpro.com/book/HomeTown-Helper-LLC/2671dbac61f94b70a0daf1c25b0fd84a?v2=true">Book service online</a>
+          </div>
+        </div>
+        <aside class="hero-card"><div class="status"><span class="status-dot"></span>Online booking available</div><strong>Need an estimate or a system checked?</strong><p>Choose the service that best fits, then submit a booking request through HomeTown Helper's current scheduling provider.</p><a href="https://book.housecallpro.com/book/HomeTown-Helper-LLC/2671dbac61f94b70a0daf1c25b0fd84a?v2=true">View available services →</a></aside>
+      </div>
+      <span class="image-note">Original illustrative concept image — not a photograph of HomeTown Helper work</span>
+    </section>
+
+    <section class="trust" aria-label="HomeTown Helper highlights"><div class="wrap trust-grid">
+      <div class="trust-item"><strong>A decade and counting</strong><span>Industry experience</span></div>
+      <div class="trust-item"><strong>Licensed &amp; insured</strong><span>Published municipal credentials</span></div>
+      <div class="trust-item"><strong>Repair, maintain, install</strong><span>Comfort systems under one roof</span></div>
+    </div></section>
+
+    <section class="section intro" aria-labelledby="intro-title"><div class="wrap intro-grid">
+      <div class="intro-copy"><p class="eyebrow">Straightforward home comfort</p><h2 class="section-title" id="intro-title">Start with what your home needs—not a one-size-fits-all pitch.</h2><p class="lede">HomeTown Helper works across heating, cooling, ventilation, hydronics, and indoor air quality. That makes it easier to look at the whole comfort system, explain the options, and focus the work on the actual problem.</p></div>
+      <aside class="diagnostic-card"><small>The HomeTown approach</small><strong>Honesty at the center of the work.</strong><p>A clear, homeowner-friendly presentation of the value HomeTown Helper already describes on its current website.</p></aside>
+    </div></section>
+
+    <section class="section services" id="services" aria-labelledby="services-title"><div class="wrap">
+      <div class="services-head"><div><p class="eyebrow">Services</p><h2 class="section-title" id="services-title">Built around the systems that keep a home comfortable.</h2></div><p class="lede">Explore the right starting point, then call or book online to confirm the work your home needs.</p></div>
+      <div class="service-grid">
+        <article class="service-card featured"><span class="num">01</span><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4v24M7.5 9l17 14M24.5 9l-17 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="1.7"/></svg></span><h3>Heating &amp; hydronics</h3><p>Service for forced-air and water-based heating systems, from repairs and maintenance to replacement planning.</p><ul class="service-list"><li>Heating repair</li><li>Furnaces and boilers</li><li>Hydronic heating solutions</li><li>Annual maintenance</li></ul></article>
+        <article class="service-card"><span class="num">02</span><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 5v22M6.5 10.5l19 11M25.5 10.5l-19 11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.7"/></svg></span><h3>Cooling &amp; heat pumps</h3><p>Help with cooling performance, equipment repairs, and efficient comfort-system options.</p><ul class="service-list"><li>Cooling repair</li><li>Heat pumps</li><li>Mini-split systems</li><li>Free heating or cooling estimates</li></ul></article>
+        <article class="service-card"><span class="num">03</span><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 17h16c4 0 4-6 0-6-2.2 0-3.4 1.2-3.7 2.6M5 22h19c3.5 0 3.5 5 0 5-1.9 0-3-1-3.3-2.2M5 11h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Service &amp; air quality</h3><p>Maintenance and targeted improvements that support cleaner airflow and more dependable operation.</p><ul class="service-list"><li>Thermostat repair and installation</li><li>Air-quality improvement</li><li>Ventilation services</li><li>System and component cleaning</li></ul></article>
+      </div>
+    </div></section>
+
+    <section class="systems" aria-labelledby="systems-title"><div class="systems-grid">
+      <figure class="systems-media"><img src="assets/hometown-hydronics.webp" width="1400" height="1050" loading="lazy" alt="Illustrative residential boiler and hydronic heating system with copper piping"><span class="image-note">Original illustrative concept — replace with owner-approved work photography</span></figure>
+      <div class="systems-copy"><div class="systems-copy-inner"><p class="eyebrow">Hydronic know-how</p><h2 id="systems-title">Comfort can move through air—or water.</h2><p class="lede">HomeTown Helper publicly highlights hydronic heating alongside conventional HVAC. This concept gives that technical capability room to stand out without losing the homeowner-friendly message.</p><div class="systems-points"><div class="systems-point"><span>01</span><span>Boiler and hydronic system service</span></div><div class="systems-point"><span>02</span><span>Furnace and forced-air heating support</span></div><div class="systems-point"><span>03</span><span>Installation, repair, and maintenance options</span></div></div></div></div>
+    </div></section>
+
+    <section class="section care" aria-labelledby="care-title"><div class="wrap care-grid">
+      <figure class="care-media"><img src="assets/hometown-service.webp" width="1400" height="1050" loading="lazy" alt="Illustrative HVAC technician diagnosing a residential air handler with a multimeter"><span class="image-note">Original illustrative concept — not HomeTown Helper personnel or client work</span></figure>
+      <div class="care-copy"><p class="eyebrow">Careful service</p><h2 class="section-title" id="care-title">Diagnosis before direction.</h2><p class="lede">A strong service website should help homeowners understand where to begin: a repair, a cleaning, routine maintenance, an air-quality concern, or a conversation about new equipment.</p><div class="care-facts"><div class="care-fact"><strong>Book the right starting point</strong><span>Repair, cleaning, thermostat, air-quality, or estimate options are available through the current online scheduler.</span></div><div class="care-fact"><strong>Confirm the actual scope</strong><span>Equipment, conditions, pricing, and recommendations are confirmed directly with HomeTown Helper.</span></div></div></div>
+    </div></section>
+
+    <section class="section process" id="process" aria-labelledby="process-title"><div class="wrap">
+      <div class="process-head"><div><p class="eyebrow">How it starts</p><h2 class="section-title" id="process-title">A clear path from comfort problem to next step.</h2></div><p class="lede">Call Austin or use the current online booking system. HomeTown Helper can then confirm the right appointment and scope for the property.</p></div>
+      <div class="steps"><article class="step"><span class="step-num">01</span><h3>Reach out</h3><p>Call, email, or choose a service through the online scheduler.</p></article><article class="step"><span class="step-num">02</span><h3>Describe the need</h3><p>Share the system, symptoms, and comfort issue you are experiencing.</p></article><article class="step"><span class="step-num">03</span><h3>Review the options</h3><p>Confirm the diagnosis, recommendation, and scope directly with HomeTown Helper.</p></article><article class="step"><span class="step-num">04</span><h3>Move forward</h3><p>Schedule the agreed repair, maintenance, cleaning, or installation work.</p></article></div>
+    </div></section>
+
+    <section class="section about" id="about" aria-labelledby="about-title"><div class="wrap about-grid">
+      <div class="gauge" aria-hidden="true"><div class="gauge-inner"><strong>10+</strong><span>A decade and counting of industry experience</span></div></div>
+      <div class="about-copy"><p class="eyebrow">Meet your HomeTown Helper</p><h2 class="section-title" id="about-title">Local expertise, presented like a neighbor—not a giant franchise.</h2><p class="lede">Austin J Townsend is the public contact for HomeTown Helper LLC. The company describes a decade and counting of HVAC industry experience, a focus on heating, cooling, ventilation, and hydronics, and honesty as the core of its work.</p><p class="about-note">This concept uses only the company story currently published by HomeTown Helper. A finished site should add owner-approved personal details, team photography, certifications, and work examples.</p></div>
+    </div></section>
+
+    <section class="section licenses" id="licenses" aria-labelledby="licenses-title"><div class="wrap">
+      <div class="license-head"><div><p class="eyebrow">Licensing &amp; trust</p><h2 class="section-title" id="licenses-title">Published municipal license references.</h2></div><p>HomeTown Helper's current website lists credentials in several Colorado municipalities. The references below reproduce that public information for owner review.</p></div>
+      <div class="license-grid"><div class="license"><strong>Aurora</strong><span>#2604749 00SL · listed through 02/27/2029<br>#2604753 00CL · listed through 03/01/2027</span></div><div class="license"><strong>Lakewood</strong><span>#CR029359 · listed through 02/02/2027</span></div><div class="license"><strong>Thornton</strong><span>Mechanical: ME202600305<br>Boiler: BOID202600304 · listed through 02/03/2027</span></div><div class="license"><strong>Westminster &amp; Littleton</strong><span>Westminster #2604991 · listed through 02/28/2027<br>Littleton #AEC002 · listed through 12/31/2026</span></div></div>
+      <p class="license-note">License identifiers and dates are shown as currently published on HomeTown Helper's official website and require confirmation with the owner and issuing municipalities before production launch. A listed municipal credential does not by itself define the company's full service area or authorize every project type.</p>
+    </div></section>
+
+    <section class="section areas" id="areas" aria-labelledby="areas-title"><div class="wrap areas-grid">
+      <div class="areas-copy"><p class="eyebrow">Local service</p><h2 class="section-title" id="areas-title">Aurora-based. Ask about your city and project.</h2><p class="lede">HomeTown Helper publishes licenses in the communities shown here. Call or book online to confirm current availability for your address.</p></div>
+      <div class="area-list" aria-label="Municipalities with licenses listed by HomeTown Helper"><span>Aurora</span><span>Lakewood</span><span>Thornton</span><span>Westminster</span><span>Littleton</span><span>Other city? Ask Austin.</span></div>
+    </div></section>
+
+    <section class="final-cta" aria-labelledby="cta-title"><div class="wrap final-grid"><div><h2 id="cta-title">Ready to get your home comfortable again?</h2><p>Call HomeTown Helper or book the service that best matches what you need.</p></div><div class="final-actions"><a class="btn" href="tel:+17208912728">Call (720) 891-2728</a><a class="btn alt" href="https://book.housecallpro.com/book/HomeTown-Helper-LLC/2671dbac61f94b70a0daf1c25b0fd84a?v2=true">Book online</a></div></div></section>
+  </main>
+
+  <footer class="business-footer"><div class="wrap"><div class="footer-grid">
+    <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 5v22M5 16h22M8.2 8.2l15.6 15.6M23.8 8.2 8.2 23.8" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg></span><span class="brand-copy"><span class="brand-name">HomeTown Helper</span><span class="brand-sub">Heating · Cooling · Hydronics</span></span></a><p>Aurora-based HVAC, hydronic heating, maintenance, air-quality, and ventilation services.</p></div>
+    <div class="footer-columns"><div><h3>Explore</h3><a href="#services">Services</a><a href="#process">How it works</a><a href="#about">About Austin</a><a href="#licenses">Licensing</a></div><div><h3>Contact</h3><a href="tel:+17208912728">(720) 891-2728</a><a href="mailto:austin.townsend@hometownhelperhvac.com">Email Austin</a><a href="https://book.housecallpro.com/book/HomeTown-Helper-LLC/2671dbac61f94b70a0daf1c25b0fd84a?v2=true">Book online</a><a href="https://www.hometownhelperhvac.com/">Current official website</a></div></div>
+  </div><p class="footer-legal">Private website concept created by gobeefound. This is not HomeTown Helper HVAC's official website, and gobeefound is not affiliated with or authorized by HomeTown Helper LLC. Publicly available information was used; services, wording, licenses, service availability, and company details require owner confirmation before production. All HVAC visuals in this concept are original illustrative material—not photographs of actual HomeTown Helper projects, personnel, or customers. The business owner may request changes or removal by contacting <a href="mailto:contact@gobeefound.com">contact@gobeefound.com</a>.</p></div></footer>
+
+  <div class="end-marker" id="concept-end" role="separator" aria-label="End of the HomeTown Helper website concept"><strong>End of the website concept</strong><span>Everything above is the proposed HomeTown Helper website. Everything below is from gobeefound.</span></div>
+
+  <section class="gbf" aria-labelledby="gbf-title"><div class="gbf-wrap">
+    <div class="gbf-intro"><div><div class="gbf-mark">go<b>bee</b>found</div><p class="gbf-overline">Why this direction</p></div><div class="gbf-intro-copy"><h2 id="gbf-title">Your technical range should feel simple to the homeowner.</h2><p>HomeTown Helper already offers a distinctive mix of conventional HVAC, hydronics, maintenance, cleaning, and air-quality services. This concept organizes that expertise into a confident customer path while keeping Austin's local identity front and center.</p><div class="gbf-reasons"><div class="gbf-reason"><strong>Local, not franchise-generic</strong><span>A grounded visual identity makes the business feel capable and personal.</span></div><div class="gbf-reason"><strong>Services grouped by need</strong><span>Homeowners can quickly understand where heating, cooling, and system care fit.</span></div><div class="gbf-reason"><strong>Trust made concrete</strong><span>Experience, licensing references, direct contact, and the current booking system are easy to find.</span></div><div class="gbf-reason"><strong>Designed for mobile action</strong><span>Calling and booking stay within easy reach until the business concept ends.</span></div></div></div></div>
+    <div class="offer"><div><div class="price">$450<small>Current founding-client offer</small></div></div><div class="offer-copy"><h3>If this direction feels right, we'll finish it with you.</h3><ul class="offer-list"><li>Customize the design and copy</li><li>Confirm services and license details</li><li>Add approved business and work photos</li><li>Connect a domain you own</li><li>Launch the finished website</li><li>Provide first-year managed hosting</li><li>One-time Google Business Profile cleanup</li><li>Review profile info, services, categories, and website connection</li></ul><p>Google Business Profile work is a one-time foundational cleanup focused on completeness, accuracy, and alignment with the finished website.</p><div class="gbf-actions"><a class="gbf-btn primary" href="https://gobeefound.com/#contact">Talk with gobeefound</a><a class="gbf-btn secondary" href="tel:+17207671898">Call (720) 767-1898</a><a class="gbf-btn secondary" href="mailto:contact@gobeefound.com">Email us</a></div><p class="gbf-fine">No required monthly marketing contract. No guaranteed rankings, leads, or revenue. The client owns its domain. Founding-offer scope is confirmed before work begins.</p></div></div>
+    <div class="gbf-footer"><span>© gobeefound</span><span>Simple, professional websites for local service businesses.</span></div>
+  </div></section>
+
+  <a class="mobile-call" href="tel:+17208912728" aria-label="Call HomeTown Helper HVAC at 720-891-2728"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8.4 3.8 6.2 4.9c-1 .5-1.5 1.6-1.2 2.7 1.6 5.6 5.9 9.9 11.5 11.5 1.1.3 2.2-.2 2.7-1.2l1.1-2.2-4.1-2-1 1.4c-.3.4-.8.5-1.2.3a13.6 13.6 0 0 1-5.3-5.3c-.2-.4-.1-.9.3-1.2l1.4-1-2-4.1Z" stroke="currentColor" stroke-width="1.7"/></svg>Call HomeTown Helper</a>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+      const closeMenu = () => { document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded','false'); toggle.setAttribute('aria-label','Open menu'); };
+      toggle.addEventListener('click', () => { const open = document.body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded',String(open)); toggle.setAttribute('aria-label',open ? 'Close menu' : 'Open menu'); });
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      window.addEventListener('resize', () => { if (window.innerWidth > 1000) closeMenu(); });
+      const endMarker = document.querySelector('#concept-end');
+      new IntersectionObserver(entries => entries.forEach(entry => document.body.classList.toggle('gbf-view', entry.isIntersecting || entry.boundingClientRect.top < 0)), {threshold:0}).observe(endMarker);
+      const hero = document.querySelector('.hero');
+      new IntersectionObserver(entries => entries.forEach(entry => document.body.classList.toggle('hero-view', entry.isIntersecting)), {threshold:.08}).observe(hero);
+    })();
+  </script>
+  <script data-goatcounter="https://gobeefound.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
